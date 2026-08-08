@@ -1,0 +1,1584 @@
+
+============================================================================================================
+Query Protein: A0A009I3Y5
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0106 |  94.64 |                         0 |
+| IVF-Flat      |           0.005  | 198.93 |                         0 |
+| Hypercube     |           0.0039 | 255.69 |                         0 |
+| IVF-PQ        |           0.013  |  76.85 |                         0 |
+| Neural LSH    |           0.0151 |  66.18 |                         0 |
+| BLAST (Ref)   |           0.354  |   2.82 |                         1 |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P14181|LICA2_HAEIF |    1.6797 | 0.0%             | No                | --            |
+|      2 | sp|A5UG81|KDKA_HAEIG  |    1.7409 | 0.0%             | No                | --            |
+|      3 | sp|P44033|Y665_HAEIN  |    1.851  | 0.0%             | No                | --            |
+|      4 | sp|Q4QLU9|RLMC_HAEI8  |    1.897  | 0.0%             | No                | --            |
+|      5 | sp|A9KYL6|UBIB_SHEB9  |    1.9775 | 0.0%             | No                | --            |
+|      6 | sp|Q8EKA0|SELU_SHEON  |    1.9787 | 0.0%             | No                | --            |
+|      7 | sp|Q7MHY6|RSMC_VIBVY  |    1.994  | 0.0%             | No                | --            |
+|      8 | sp|B2J946|SASA_NOSP7  |    2.0007 | 0.0%             | No                | --            |
+|      9 | sp|Q8E9R5|UBIB_SHEON  |    2.0058 | 0.0%             | No                | --            |
+|     10 | sp|Q6C2A3|BUD32_YARLI |    2.0127 | 0.0%             | No                | --            |
+|     11 | sp|A1SW96|MNMC_PSYIN  |    2.0129 | 0.0%             | No                | --            |
+|     12 | sp|B2K7I7|RAVA_YERPB  |    2.0167 | 0.0%             | No                | --            |
+|     13 | sp|P44150|Y1273_HAEIN |    2.0171 | 0.0%             | No                | --            |
+|     14 | sp|Q8EIL1|RSMC_SHEON  |    2.0206 | 0.0%             | No                | --            |
+|     15 | sp|P33800|PG187_VAR67 |    2.0211 | 26.136%          | No                | --            |
+|     16 | sp|P24362|KRB2_VACCW  |    2.0219 | 26.829%          | No                | --            |
+|     17 | sp|Q7MAX6|TRMA_PHOLL  |    2.0229 | 0.0%             | No                | --            |
+|     18 | sp|A2BRQ6|SASA_PROMS  |    2.0255 | 0.0%             | No                | --            |
+|     19 | sp|Q1Q8I2|TPMT_PSYCK  |    2.027  | 0.0%             | No                | --            |
+|     20 | sp|Q7VP87|RSMC_HAEDU  |    2.0295 | 0.0%             | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P14181|LICA2_HAEIF |    1.6797 | 0.0%             | No                | --            |
+|      2 | sp|A5UG81|KDKA_HAEIG  |    1.6797 | 0.0%             | No                | --            |
+|      3 | sp|Q4QLU9|RLMC_HAEI8  |    1.6797 | 0.0%             | No                | --            |
+|      4 | sp|A9KYL6|UBIB_SHEB9  |    1.6797 | 0.0%             | No                | --            |
+|      5 | sp|Q8EKA0|SELU_SHEON  |    1.6797 | 0.0%             | No                | --            |
+|      6 | sp|Q7MHY6|RSMC_VIBVY  |    1.6797 | 0.0%             | No                | --            |
+|      7 | sp|B2J946|SASA_NOSP7  |    1.6797 | 0.0%             | No                | --            |
+|      8 | sp|Q8E9R5|UBIB_SHEON  |    1.6797 | 0.0%             | No                | --            |
+|      9 | sp|Q6C2A3|BUD32_YARLI |    1.6797 | 0.0%             | No                | --            |
+|     10 | sp|A1SW96|MNMC_PSYIN  |    1.6797 | 0.0%             | No                | --            |
+|     11 | sp|B2K7I7|RAVA_YERPB  |    1.6797 | 0.0%             | No                | --            |
+|     12 | sp|P44150|Y1273_HAEIN |    1.6797 | 0.0%             | No                | --            |
+|     13 | sp|Q8EIL1|RSMC_SHEON  |    1.6797 | 0.0%             | No                | --            |
+|     14 | sp|P33800|PG187_VAR67 |    1.6797 | 26.136%          | No                | --            |
+|     15 | sp|P24362|KRB2_VACCW  |    1.6797 | 26.829%          | No                | --            |
+|     16 | sp|Q7MAX6|TRMA_PHOLL  |    1.6797 | 0.0%             | No                | --            |
+|     17 | sp|Q12SQ2|SELU_SHEDO  |    1.6797 | 0.0%             | No                | --            |
+|     18 | sp|A2BRQ6|SASA_PROMS  |    1.6797 | 0.0%             | No                | --            |
+|     19 | sp|Q1Q8I2|TPMT_PSYCK  |    1.6797 | 0.0%             | No                | --            |
+|     20 | sp|Q7VP87|RSMC_HAEDU  |    1.6797 | 0.0%             | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P14181|LICA2_HAEIF |    1.6797 | 0.0%             | No                | --            |
+|      2 | sp|A5UG81|KDKA_HAEIG  |    1.7409 | 0.0%             | No                | --            |
+|      3 | sp|Q4QLU9|RLMC_HAEI8  |    1.897  | 0.0%             | No                | --            |
+|      4 | sp|Q8E9R5|UBIB_SHEON  |    2.0058 | 0.0%             | No                | --            |
+|      5 | sp|P33800|PG187_VAR67 |    2.0211 | 26.136%          | No                | --            |
+|      6 | sp|P24362|KRB2_VACCW  |    2.0219 | 26.829%          | No                | --            |
+|      7 | sp|Q1Q8I2|TPMT_PSYCK  |    2.027  | 0.0%             | No                | --            |
+|      8 | sp|P75612|Y081_MYCPN  |    2.0496 | 0.0%             | No                | --            |
+|      9 | sp|C1EQQ8|MTNK_BACC3  |    2.0522 | 0.0%             | No                | --            |
+|     10 | sp|B9IWP6|MTNK_BACCQ  |    2.0724 | 0.0%             | No                | --            |
+|     11 | sp|Q635P6|MTNK_BACCZ  |    2.0726 | 0.0%             | No                | --            |
+|     12 | sp|A3QHZ8|RSMC_SHELP  |    2.0971 | 0.0%             | No                | --            |
+|     13 | sp|P75210|ERA_MYCPN   |    2.0991 | 0.0%             | No                | --            |
+|     14 | sp|B1KD54|RLMG_SHEWM  |    2.1001 | 0.0%             | No                | --            |
+|     15 | sp|P20098|RCSA_ERWAM  |    2.1031 | 0.0%             | No                | --            |
+|     16 | sp|B8CI04|UBIB_SHEPW  |    2.1092 | 0.0%             | No                | --            |
+|     17 | sp|P0DMD0|RCSA_ECOLX  |    2.1284 | 0.0%             | No                | --            |
+|     18 | sp|Q3IBW7|RLMF_PSET1  |    2.1344 | 0.0%             | No                | --            |
+|     19 | sp|Q3IHQ6|RLMG_PSET1  |    2.1467 | 0.0%             | No                | --            |
+|     20 | sp|B7UKC3|MALT_ECO27  |    2.1577 | 0.0%             | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|A5UG81|KDKA_HAEIG  |   14.6954 | 0.0%             | No                | --            |
+|      2 | sp|P14181|LICA2_HAEIF |   14.7267 | 0.0%             | No                | --            |
+|      3 | sp|P44033|Y665_HAEIN  |   15.1926 | 0.0%             | No                | --            |
+|      4 | sp|Q87PM1|KT3K_VIBPA  |   15.7365 | 0.0%             | No                | --            |
+|      5 | sp|B4F0D4|VIAA_PROMH  |   15.8068 | 0.0%             | No                | --            |
+|      6 | sp|B2K7I7|RAVA_YERPB  |   15.8942 | 0.0%             | No                | --            |
+|      7 | sp|Q8EKA0|SELU_SHEON  |   15.9117 | 0.0%             | No                | --            |
+|      8 | sp|A9KYL6|UBIB_SHEB9  |   16.258  | 0.0%             | No                | --            |
+|      9 | sp|Q12SQ2|SELU_SHEDO  |   16.2835 | 0.0%             | No                | --            |
+|     10 | sp|A1SW96|MNMC_PSYIN  |   16.3634 | 0.0%             | No                | --            |
+|     11 | sp|Q4QLU9|RLMC_HAEI8  |   16.3796 | 0.0%             | No                | --            |
+|     12 | sp|A3DA85|SELU_SHEB5  |   16.68   | 0.0%             | No                | --            |
+|     13 | sp|B2J946|SASA_NOSP7  |   16.6935 | 0.0%             | No                | --            |
+|     14 | sp|P44150|Y1273_HAEIN |   16.8959 | 0.0%             | No                | --            |
+|     15 | sp|Q7VP87|RSMC_HAEDU  |   16.9081 | 0.0%             | No                | --            |
+|     16 | sp|Q8E9R5|UBIB_SHEON  |   16.9719 | 0.0%             | No                | --            |
+|     17 | sp|C1EQQ8|MTNK_BACC3  |   16.9754 | 0.0%             | No                | --            |
+|     18 | sp|B4F233|CYSH_PROMH  |   17.019  | 0.0%             | No                | --            |
+|     19 | sp|Q8EIL1|RSMC_SHEON  |   17.0231 | 0.0%             | No                | --            |
+|     20 | sp|Q6C2A3|BUD32_YARLI |   17.0296 | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P14181|LICA2_HAEIF |    1.6797 | 0.0%             | No                | --            |
+|      2 | sp|A5UG81|KDKA_HAEIG  |    1.7409 | 0.0%             | No                | --            |
+|      3 | sp|P44033|Y665_HAEIN  |    1.851  | 0.0%             | No                | --            |
+|      4 | sp|Q4QLU9|RLMC_HAEI8  |    1.897  | 0.0%             | No                | --            |
+|      5 | sp|Q8EKA0|SELU_SHEON  |    1.9787 | 0.0%             | No                | --            |
+|      6 | sp|Q7MHY6|RSMC_VIBVY  |    1.994  | 0.0%             | No                | --            |
+|      7 | sp|B2J946|SASA_NOSP7  |    2.0007 | 0.0%             | No                | --            |
+|      8 | sp|Q6C2A3|BUD32_YARLI |    2.0127 | 0.0%             | No                | --            |
+|      9 | sp|B2K7I7|RAVA_YERPB  |    2.0167 | 0.0%             | No                | --            |
+|     10 | sp|P44150|Y1273_HAEIN |    2.0171 | 0.0%             | No                | --            |
+|     11 | sp|Q8EIL1|RSMC_SHEON  |    2.0206 | 0.0%             | No                | --            |
+|     12 | sp|P33800|PG187_VAR67 |    2.0211 | 26.136%          | No                | --            |
+|     13 | sp|P24362|KRB2_VACCW  |    2.0219 | 26.829%          | No                | --            |
+|     14 | sp|Q7MAX6|TRMA_PHOLL  |    2.023  | 0.0%             | No                | --            |
+|     15 | sp|Q12SQ2|SELU_SHEDO  |    2.0238 | 0.0%             | No                | --            |
+|     16 | sp|A2BRQ6|SASA_PROMS  |    2.0256 | 0.0%             | No                | --            |
+|     17 | sp|Q1Q8I2|TPMT_PSYCK  |    2.027  | 0.0%             | No                | --            |
+|     18 | sp|Q7VP87|RSMC_HAEDU  |    2.0295 | 0.0%             | No                | --            |
+|     19 | sp|Q87PM1|KT3K_VIBPA  |    2.0349 | 0.0%             | No                | --            |
+|     20 | sp|A3DA85|SELU_SHEB5  |    2.0366 | 0.0%             | No                | --            |
+
+============================================================================================================
+Query Protein: A0A009PCK4
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0106 |  94.7  |                         0 |
+| IVF-Flat      |           0.0064 | 157.03 |                         0 |
+| Hypercube     |           0.0036 | 275.99 |                         0 |
+| IVF-PQ        |           0.012  |  83.28 |                         0 |
+| Neural LSH    |           0.0084 | 119.6  |                         0 |
+| BLAST (Ref)   |           0.354  |   2.82 |                         1 |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P14181|LICA2_HAEIF |    1.6646 | 0.0%             | No                | --            |
+|      2 | sp|A5UG81|KDKA_HAEIG  |    1.7109 | 0.0%             | No                | --            |
+|      3 | sp|P44033|Y665_HAEIN  |    1.8302 | 0.0%             | No                | --            |
+|      4 | sp|Q4QLU9|RLMC_HAEI8  |    1.9034 | 0.0%             | No                | --            |
+|      5 | sp|A9KYL6|UBIB_SHEB9  |    1.975  | 0.0%             | No                | --            |
+|      6 | sp|Q8EKA0|SELU_SHEON  |    1.9826 | 0.0%             | No                | --            |
+|      7 | sp|Q6C2A3|BUD32_YARLI |    1.9951 | 0.0%             | No                | --            |
+|      8 | sp|P24362|KRB2_VACCW  |    1.9961 | 27.049%          | No                | --            |
+|      9 | sp|B2J946|SASA_NOSP7  |    1.9978 | 0.0%             | No                | --            |
+|     10 | sp|Q7MHY6|RSMC_VIBVY  |    1.9988 | 0.0%             | No                | --            |
+|     11 | sp|Q8E9R5|UBIB_SHEON  |    2.0016 | 0.0%             | No                | --            |
+|     12 | sp|A1SW96|MNMC_PSYIN  |    2.0076 | 0.0%             | No                | --            |
+|     13 | sp|P44150|Y1273_HAEIN |    2.0101 | 0.0%             | No                | --            |
+|     14 | sp|P33800|PG187_VAR67 |    2.011  | 26.136%          | No                | --            |
+|     15 | sp|Q1Q8I2|TPMT_PSYCK  |    2.0192 | 0.0%             | No                | --            |
+|     16 | sp|Q9J523|V212_FOWPN  |    2.0227 | 0.0%             | No                | --            |
+|     17 | sp|A2BRQ6|SASA_PROMS  |    2.0249 | 0.0%             | No                | --            |
+|     18 | sp|Q7MAX6|TRMA_PHOLL  |    2.0268 | 0.0%             | No                | --            |
+|     19 | sp|B2K7I7|RAVA_YERPB  |    2.0271 | 0.0%             | No                | --            |
+|     20 | sp|Q87PM1|KT3K_VIBPA  |    2.0292 | 0.0%             | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P14181|LICA2_HAEIF |    1.7109 | 0.0%             | No                | --            |
+|      2 | sp|A5UG81|KDKA_HAEIG  |    1.7109 | 0.0%             | No                | --            |
+|      3 | sp|Q4QLU9|RLMC_HAEI8  |    1.7109 | 0.0%             | No                | --            |
+|      4 | sp|A9KYL6|UBIB_SHEB9  |    1.7109 | 0.0%             | No                | --            |
+|      5 | sp|Q8EKA0|SELU_SHEON  |    1.7109 | 0.0%             | No                | --            |
+|      6 | sp|Q6C2A3|BUD32_YARLI |    1.7109 | 0.0%             | No                | --            |
+|      7 | sp|P24362|KRB2_VACCW  |    1.7109 | 27.049%          | No                | --            |
+|      8 | sp|B2J946|SASA_NOSP7  |    1.7109 | 0.0%             | No                | --            |
+|      9 | sp|Q7MHY6|RSMC_VIBVY  |    1.7109 | 0.0%             | No                | --            |
+|     10 | sp|Q8E9R5|UBIB_SHEON  |    1.7109 | 0.0%             | No                | --            |
+|     11 | sp|A1SW96|MNMC_PSYIN  |    1.7109 | 0.0%             | No                | --            |
+|     12 | sp|P44150|Y1273_HAEIN |    1.7109 | 0.0%             | No                | --            |
+|     13 | sp|P33800|PG187_VAR67 |    1.7109 | 26.136%          | No                | --            |
+|     14 | sp|Q1Q8I2|TPMT_PSYCK  |    1.7109 | 0.0%             | No                | --            |
+|     15 | sp|Q9J523|V212_FOWPN  |    1.7109 | 0.0%             | No                | --            |
+|     16 | sp|Q12SQ2|SELU_SHEDO  |    1.7109 | 0.0%             | No                | --            |
+|     17 | sp|A2BRQ6|SASA_PROMS  |    1.7109 | 0.0%             | No                | --            |
+|     18 | sp|Q7MAX6|TRMA_PHOLL  |    1.7109 | 0.0%             | No                | --            |
+|     19 | sp|B2K7I7|RAVA_YERPB  |    1.7109 | 0.0%             | No                | --            |
+|     20 | sp|Q87PM1|KT3K_VIBPA  |    1.7109 | 0.0%             | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P14181|LICA2_HAEIF |    1.6646 | 0.0%             | No                | --            |
+|      2 | sp|A5UG81|KDKA_HAEIG  |    1.7109 | 0.0%             | No                | --            |
+|      3 | sp|Q4QLU9|RLMC_HAEI8  |    1.9034 | 0.0%             | No                | --            |
+|      4 | sp|P24362|KRB2_VACCW  |    1.9961 | 27.049%          | No                | --            |
+|      5 | sp|Q8E9R5|UBIB_SHEON  |    2.0016 | 0.0%             | No                | --            |
+|      6 | sp|P33800|PG187_VAR67 |    2.011  | 26.136%          | No                | --            |
+|      7 | sp|Q1Q8I2|TPMT_PSYCK  |    2.0192 | 0.0%             | No                | --            |
+|      8 | sp|C1EQQ8|MTNK_BACC3  |    2.0296 | 0.0%             | No                | --            |
+|      9 | sp|Q635P6|MTNK_BACCZ  |    2.0499 | 0.0%             | No                | --            |
+|     10 | sp|B9IWP6|MTNK_BACCQ  |    2.0519 | 0.0%             | No                | --            |
+|     11 | sp|P75612|Y081_MYCPN  |    2.0525 | 0.0%             | No                | --            |
+|     12 | sp|P75210|ERA_MYCPN   |    2.0942 | 0.0%             | No                | --            |
+|     13 | sp|A3QHZ8|RSMC_SHELP  |    2.0967 | 0.0%             | No                | --            |
+|     14 | sp|P20098|RCSA_ERWAM  |    2.0993 | 0.0%             | No                | --            |
+|     15 | sp|B1KD54|RLMG_SHEWM  |    2.1016 | 0.0%             | No                | --            |
+|     16 | sp|B8CI04|UBIB_SHEPW  |    2.1055 | 0.0%             | No                | --            |
+|     17 | sp|P0DMD0|RCSA_ECOLX  |    2.1297 | 0.0%             | No                | --            |
+|     18 | sp|Q3IBW7|RLMF_PSET1  |    2.1338 | 0.0%             | No                | --            |
+|     19 | sp|Q3IHQ6|RLMG_PSET1  |    2.1448 | 0.0%             | No                | --            |
+|     20 | sp|Q2YDN8|VRK3_BOVIN  |    2.1601 | 0.0%             | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|A5UG81|KDKA_HAEIG  |   14.5002 | 0.0%             | No                | --            |
+|      2 | sp|P14181|LICA2_HAEIF |   14.6451 | 0.0%             | No                | --            |
+|      3 | sp|P44033|Y665_HAEIN  |   15.0487 | 0.0%             | No                | --            |
+|      4 | sp|Q87PM1|KT3K_VIBPA  |   15.704  | 0.0%             | No                | --            |
+|      5 | sp|B4F0D4|VIAA_PROMH  |   15.8681 | 0.0%             | No                | --            |
+|      6 | sp|Q8EKA0|SELU_SHEON  |   16.0116 | 0.0%             | No                | --            |
+|      7 | sp|B2K7I7|RAVA_YERPB  |   16.0542 | 0.0%             | No                | --            |
+|      8 | sp|A9KYL6|UBIB_SHEB9  |   16.2059 | 0.0%             | No                | --            |
+|      9 | sp|Q12SQ2|SELU_SHEDO  |   16.3188 | 0.0%             | No                | --            |
+|     10 | sp|A1SW96|MNMC_PSYIN  |   16.3595 | 0.0%             | No                | --            |
+|     11 | sp|Q4QLU9|RLMC_HAEI8  |   16.4438 | 0.0%             | No                | --            |
+|     12 | sp|B2J946|SASA_NOSP7  |   16.6479 | 0.0%             | No                | --            |
+|     13 | sp|A3DA85|SELU_SHEB5  |   16.7584 | 0.0%             | No                | --            |
+|     14 | sp|C1EQQ8|MTNK_BACC3  |   16.7959 | 0.0%             | No                | --            |
+|     15 | sp|P44150|Y1273_HAEIN |   16.8472 | 0.0%             | No                | --            |
+|     16 | sp|Q6G4C4|KHSE_BARHE  |   16.8495 | 0.0%             | No                | --            |
+|     17 | sp|B9IWP6|MTNK_BACCQ  |   16.8855 | 0.0%             | No                | --            |
+|     18 | sp|Q6C2A3|BUD32_YARLI |   16.8873 | 0.0%             | No                | --            |
+|     19 | sp|Q635P6|MTNK_BACCZ  |   16.8999 | 0.0%             | No                | --            |
+|     20 | sp|Q8E9R5|UBIB_SHEON  |   16.9003 | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P14181|LICA2_HAEIF |    1.6646 | 0.0%             | No                | --            |
+|      2 | sp|A5UG81|KDKA_HAEIG  |    1.7109 | 0.0%             | No                | --            |
+|      3 | sp|P44033|Y665_HAEIN  |    1.8302 | 0.0%             | No                | --            |
+|      4 | sp|Q4QLU9|RLMC_HAEI8  |    1.9034 | 0.0%             | No                | --            |
+|      5 | sp|Q8EKA0|SELU_SHEON  |    1.9826 | 0.0%             | No                | --            |
+|      6 | sp|Q6C2A3|BUD32_YARLI |    1.9951 | 0.0%             | No                | --            |
+|      7 | sp|P24362|KRB2_VACCW  |    1.9961 | 27.049%          | No                | --            |
+|      8 | sp|B2J946|SASA_NOSP7  |    1.9978 | 0.0%             | No                | --            |
+|      9 | sp|Q7MHY6|RSMC_VIBVY  |    1.9988 | 0.0%             | No                | --            |
+|     10 | sp|P44150|Y1273_HAEIN |    2.0101 | 0.0%             | No                | --            |
+|     11 | sp|P33800|PG187_VAR67 |    2.011  | 26.136%          | No                | --            |
+|     12 | sp|Q1Q8I2|TPMT_PSYCK  |    2.0192 | 0.0%             | No                | --            |
+|     13 | sp|Q9J523|V212_FOWPN  |    2.0227 | 0.0%             | No                | --            |
+|     14 | sp|Q12SQ2|SELU_SHEDO  |    2.0242 | 0.0%             | No                | --            |
+|     15 | sp|A2BRQ6|SASA_PROMS  |    2.0249 | 0.0%             | No                | --            |
+|     16 | sp|Q7MAX6|TRMA_PHOLL  |    2.0268 | 0.0%             | No                | --            |
+|     17 | sp|B2K7I7|RAVA_YERPB  |    2.0271 | 0.0%             | No                | --            |
+|     18 | sp|Q87PM1|KT3K_VIBPA  |    2.0292 | 0.0%             | No                | --            |
+|     19 | sp|C1EQQ8|MTNK_BACC3  |    2.0296 | 0.0%             | No                | --            |
+|     20 | sp|Q9KM66|CQSS_VIBCH  |    2.0307 | 0.0%             | No                | --            |
+
+============================================================================================================
+Query Protein: A0A001
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0096 | 104.06 |                      0.1  |
+| IVF-Flat      |           0.0047 | 211.57 |                      0.1  |
+| Hypercube     |           0.0035 | 283.54 |                      0.15 |
+| IVF-PQ        |           0.0103 |  97.53 |                      0.05 |
+| Neural LSH    |           0.0104 |  95.93 |                      0.1  |
+| BLAST (Ref)   |           0.354  |   2.82 |                      1    |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU |    1.3385 | 25.309%          | No                | --            |
+|      2 | sp|Q13BH6|NDVA_RHOPS  |    1.4227 | 32.719%          | No                | --            |
+|      3 | sp|Q03024|APRD_PSEAE  |    1.4647 | 38.462%          | No                | --            |
+|      4 | sp|Q20Z38|NDVA_RHOPB  |    1.5254 | 23.539%          | No                | --            |
+|      5 | sp|Q9ZEP3|CSEC_STRCO  |    1.7526 | 0.0%             | No                | --            |
+|      6 | sp|A0K739|SSUB1_BURCH |    1.7571 | 35.644%          | No                | --            |
+|      7 | sp|Q51719|YCOBA_PROFR |    1.7651 | 30.189%          | No                | --            |
+|      8 | sp|Q8P8W4|MSBA_XANCP  |    1.7696 | 36.1%            | Yes               | --            |
+|      9 | sp|Q3JSR6|SSUB_BURP1  |    1.7893 | 37.056%          | No                | --            |
+|     10 | sp|P23886|CYDC_ECOLI  |    1.8077 | 32.143%          | No                | --            |
+|     11 | sp|Q21BF6|MODC_RHOPB  |    1.8275 | 32.751%          | No                | --            |
+|     12 | sp|O70595|ABCB6_RAT   |    1.8577 | 27.536%          | No                | --            |
+|     13 | sp|Q82MV1|SSUB1_STRAW |    1.8651 | 33.333%          | No                | --            |
+|     14 | sp|Q9NP58|ABCB6_HUMAN |    1.8708 | 27.596%          | Yes               | --            |
+|     15 | sp|Q60AI1|POTA_METCA  |    1.8941 | 30.667%          | No                | --            |
+|     16 | sp|P9WQJ4|OPPD_MYCTO  |    1.9003 | 27.928%          | No                | --            |
+|     17 | sp|Q28433|TAP1_GORGO  |    1.9033 | 28.736%          | No                | --            |
+|     18 | sp|A3Q5L8|MPRB_MYCSJ  |    1.9055 | 0.0%             | No                | --            |
+|     19 | sp|Q7WGW1|CYSA_BORBR  |    1.9158 | 32.743%          | No                | --            |
+|     20 | sp|Q7VZE5|CYSA_BORPE  |    1.9199 | 33.04%           | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU |    1.4647 | 25.309%          | No                | --            |
+|      2 | sp|Q13BH6|NDVA_RHOPS  |    1.4647 | 32.719%          | No                | --            |
+|      3 | sp|Q03024|APRD_PSEAE  |    1.4647 | 38.462%          | No                | --            |
+|      4 | sp|Q20Z38|NDVA_RHOPB  |    1.4647 | 23.539%          | No                | --            |
+|      5 | sp|Q9ZEP3|CSEC_STRCO  |    1.4647 | 0.0%             | No                | --            |
+|      6 | sp|A0K739|SSUB1_BURCH |    1.4647 | 35.644%          | No                | --            |
+|      7 | sp|Q51719|YCOBA_PROFR |    1.4647 | 30.189%          | No                | --            |
+|      8 | sp|Q8P8W4|MSBA_XANCP  |    1.4647 | 36.1%            | Yes               | --            |
+|      9 | sp|Q3JSR6|SSUB_BURP1  |    1.4647 | 37.056%          | No                | --            |
+|     10 | sp|P23886|CYDC_ECOLI  |    1.4647 | 32.143%          | No                | --            |
+|     11 | sp|Q21BF6|MODC_RHOPB  |    1.4647 | 32.751%          | No                | --            |
+|     12 | sp|O70595|ABCB6_RAT   |    1.4647 | 27.536%          | No                | --            |
+|     13 | sp|Q82MV1|SSUB1_STRAW |    1.4647 | 33.333%          | No                | --            |
+|     14 | sp|Q9NP58|ABCB6_HUMAN |    1.4647 | 27.596%          | Yes               | --            |
+|     15 | sp|Q60AI1|POTA_METCA  |    1.4647 | 30.667%          | No                | --            |
+|     16 | sp|P9WQJ4|OPPD_MYCTO  |    1.4647 | 27.928%          | No                | --            |
+|     17 | sp|Q28433|TAP1_GORGO  |    1.4647 | 28.736%          | No                | --            |
+|     18 | sp|A3Q5L8|MPRB_MYCSJ  |    1.4647 | 0.0%             | No                | --            |
+|     19 | sp|Q7WGW1|CYSA_BORBR  |    1.4647 | 32.743%          | No                | --            |
+|     20 | sp|Q7VZE5|CYSA_BORPE  |    1.4647 | 33.04%           | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU |    1.3385 | 25.309%          | No                | --            |
+|      2 | sp|Q13BH6|NDVA_RHOPS  |    1.4227 | 32.719%          | No                | --            |
+|      3 | sp|Q03024|APRD_PSEAE  |    1.4647 | 38.462%          | No                | --            |
+|      4 | sp|Q20Z38|NDVA_RHOPB  |    1.5254 | 23.539%          | No                | --            |
+|      5 | sp|Q9ZEP3|CSEC_STRCO  |    1.7526 | 0.0%             | No                | --            |
+|      6 | sp|Q8P8W4|MSBA_XANCP  |    1.7696 | 36.1%            | Yes               | --            |
+|      7 | sp|A3Q5L8|MPRB_MYCSJ  |    1.9055 | 0.0%             | No                | --            |
+|      8 | sp|Q9CCJ1|MTRB_MYCLE  |    1.9779 | 0.0%             | No                | --            |
+|      9 | sp|Q0WML0|AB27B_ARATH |    2.0263 | 36.598%          | Yes               | --            |
+|     10 | sp|P9WGK4|SENX3_MYCTO |    2.0703 | 0.0%             | No                | --            |
+|     11 | sp|A5WJJ8|MSHA_MYCTF  |    2.076  | 0.0%             | No                | --            |
+|     12 | sp|P64708|MSHA_MYCBO  |    2.076  | 0.0%             | No                | --            |
+|     13 | sp|Q5B1Q2|ATM1_EMENI  |    2.1248 | 32.039%          | No                | --            |
+|     14 | sp|Q8LPQ6|AB28B_ARATH |    2.1362 | 32.857%          | No                | --            |
+|     15 | sp|B1MHQ0|MSHA_MYCA9  |    2.1376 | 0.0%             | No                | --            |
+|     16 | sp|P33973|PKN1_MYXXA  |    2.1458 | 0.0%             | No                | --            |
+|     17 | sp|Q82G92|MSHA_STRAW  |    2.1585 | 0.0%             | No                | --            |
+|     18 | sp|C7MSY6|MSHA_SACVD  |    2.1687 | 0.0%             | No                | --            |
+|     19 | sp|B1VLT7|LCDH_STRGG  |    2.1714 | 0.0%             | No                | --            |
+|     20 | sp|Q4FS42|MSBA_PSYA2  |    2.1737 | 30.932%          | Yes               | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU |   12.1786 | 25.309%          | No                | --            |
+|      2 | sp|Q03024|APRD_PSEAE  |   13.065  | 38.462%          | No                | --            |
+|      3 | sp|Q13BH6|NDVA_RHOPS  |   13.0824 | 32.719%          | No                | --            |
+|      4 | sp|Q20Z38|NDVA_RHOPB  |   13.3235 | 23.539%          | No                | --            |
+|      5 | sp|Q51719|YCOBA_PROFR |   14.6995 | 30.189%          | No                | --            |
+|      6 | sp|Q9ZEP3|CSEC_STRCO  |   14.7644 | 0.0%             | No                | --            |
+|      7 | sp|Q8P8W4|MSBA_XANCP  |   15.0847 | 36.1%            | Yes               | --            |
+|      8 | sp|A0K739|SSUB1_BURCH |   15.2079 | 35.644%          | No                | --            |
+|      9 | sp|P23886|CYDC_ECOLI  |   15.3802 | 32.143%          | No                | --            |
+|     10 | sp|Q82MV1|SSUB1_STRAW |   15.3929 | 33.333%          | No                | --            |
+|     11 | sp|Q3JSR6|SSUB_BURP1  |   15.6146 | 37.056%          | No                | --            |
+|     12 | sp|Q21BF6|MODC_RHOPB  |   15.6796 | 32.751%          | No                | --            |
+|     13 | sp|Q60AI1|POTA_METCA  |   15.6994 | 30.667%          | No                | --            |
+|     14 | sp|P9WQJ4|OPPD_MYCTO  |   15.9068 | 27.928%          | No                | --            |
+|     15 | sp|Q7WGW1|CYSA_BORBR  |   15.9778 | 32.743%          | No                | --            |
+|     16 | sp|Q2J3T0|HMUV_RHOP2  |   16.0024 | 30.87%           | No                | --            |
+|     17 | sp|A6W3V7|RECF_KINRD  |   16.0043 | 0.0%             | No                | --            |
+|     18 | sp|Q8YE15|MODC_BRUME  |   16.193  | 32.524%          | No                | --            |
+|     19 | sp|P9WHR1|RIP3_MYCTU  |   16.2079 | 0.0%             | No                | --            |
+|     20 | sp|P9WHR0|RIP3_MYCTO  |   16.2079 | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU |    1.3385 | 25.309%          | No                | --            |
+|      2 | sp|Q13BH6|NDVA_RHOPS  |    1.4227 | 32.719%          | No                | --            |
+|      3 | sp|Q03024|APRD_PSEAE  |    1.4647 | 38.462%          | No                | --            |
+|      4 | sp|Q20Z38|NDVA_RHOPB  |    1.5254 | 23.539%          | No                | --            |
+|      5 | sp|Q9ZEP3|CSEC_STRCO  |    1.7526 | 0.0%             | No                | --            |
+|      6 | sp|A0K739|SSUB1_BURCH |    1.7572 | 35.644%          | No                | --            |
+|      7 | sp|Q51719|YCOBA_PROFR |    1.7651 | 30.189%          | No                | --            |
+|      8 | sp|Q8P8W4|MSBA_XANCP  |    1.7696 | 36.1%            | Yes               | --            |
+|      9 | sp|Q3JSR6|SSUB_BURP1  |    1.7893 | 37.056%          | No                | --            |
+|     10 | sp|P23886|CYDC_ECOLI  |    1.8077 | 32.143%          | No                | --            |
+|     11 | sp|Q21BF6|MODC_RHOPB  |    1.8275 | 32.751%          | No                | --            |
+|     12 | sp|O70595|ABCB6_RAT   |    1.8577 | 27.536%          | No                | --            |
+|     13 | sp|Q82MV1|SSUB1_STRAW |    1.8651 | 33.333%          | No                | --            |
+|     14 | sp|Q9NP58|ABCB6_HUMAN |    1.8708 | 27.596%          | Yes               | --            |
+|     15 | sp|Q60AI1|POTA_METCA  |    1.8941 | 30.667%          | No                | --            |
+|     16 | sp|P9WQJ4|OPPD_MYCTO  |    1.9003 | 27.928%          | No                | --            |
+|     17 | sp|Q28433|TAP1_GORGO  |    1.9033 | 28.736%          | No                | --            |
+|     18 | sp|A3Q5L8|MPRB_MYCSJ  |    1.9055 | 0.0%             | No                | --            |
+|     19 | sp|Q7WGW1|CYSA_BORBR  |    1.9158 | 32.743%          | No                | --            |
+|     20 | sp|Q7VZE5|CYSA_BORPE  |    1.9199 | 33.04%           | No                | --            |
+
+============================================================================================================
+Query Protein: A0A002
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0104 |  96.02 |                       0.1 |
+| IVF-Flat      |           0.0043 | 233.93 |                       0.1 |
+| Hypercube     |           0.0034 | 293.94 |                       0.2 |
+| IVF-PQ        |           0.0098 | 102.26 |                       0.1 |
+| Neural LSH    |           0.008  | 125.35 |                       0.1 |
+| BLAST (Ref)   |           0.354  |   2.82 |                       1   |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU |    1.3334 | 27.743%          | Yes               | --            |
+|      2 | sp|Q13BH6|NDVA_RHOPS  |    1.4321 | 29.242%          | No                | --            |
+|      3 | sp|Q03024|APRD_PSEAE  |    1.5028 | 31.31%           | No                | --            |
+|      4 | sp|Q20Z38|NDVA_RHOPB  |    1.5298 | 28.288%          | Yes               | --            |
+|      5 | sp|Q8P8W4|MSBA_XANCP  |    1.746  | 27.778%          | No                | --            |
+|      6 | sp|P23886|CYDC_ECOLI  |    1.7576 | 27.8%            | No                | --            |
+|      7 | sp|Q51719|YCOBA_PROFR |    1.7732 | 30.851%          | No                | --            |
+|      8 | sp|Q82MV1|SSUB1_STRAW |    1.7866 | 29.515%          | No                | --            |
+|      9 | sp|A0K739|SSUB1_BURCH |    1.8224 | 32.906%          | No                | --            |
+|     10 | sp|Q28433|TAP1_GORGO  |    1.8502 | 27.383%          | No                | --            |
+|     11 | sp|Q60AI1|POTA_METCA  |    1.8844 | 33.585%          | No                | --            |
+|     12 | sp|P9WQJ4|OPPD_MYCTO  |    1.8893 | 26.887%          | No                | --            |
+|     13 | sp|Q7VZE5|CYSA_BORPE  |    1.8944 | 29.911%          | No                | --            |
+|     14 | sp|Q7WGW1|CYSA_BORBR  |    1.895  | 29.464%          | No                | --            |
+|     15 | sp|O70595|ABCB6_RAT   |    1.8969 | 31.915%          | No                | --            |
+|     16 | sp|Q3JSR6|SSUB_BURP1  |    1.8992 | 32.883%          | No                | --            |
+|     17 | sp|Q9NP58|ABCB6_HUMAN |    1.9151 | 31.561%          | No                | --            |
+|     18 | sp|Q2J3T0|HMUV_RHOP2  |    1.9297 | 30.769%          | No                | --            |
+|     19 | sp|Q21BF6|MODC_RHOPB  |    1.9326 | 30.415%          | No                | --            |
+|     20 | sp|A6W3V7|RECF_KINRD  |    1.9399 | 0.0%             | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU |    1.5298 | 27.743%          | Yes               | --            |
+|      2 | sp|Q13BH6|NDVA_RHOPS  |    1.5298 | 29.242%          | No                | --            |
+|      3 | sp|Q03024|APRD_PSEAE  |    1.5298 | 31.31%           | No                | --            |
+|      4 | sp|Q20Z38|NDVA_RHOPB  |    1.5298 | 28.288%          | Yes               | --            |
+|      5 | sp|Q8P8W4|MSBA_XANCP  |    1.5298 | 27.778%          | No                | --            |
+|      6 | sp|P23886|CYDC_ECOLI  |    1.5298 | 27.8%            | No                | --            |
+|      7 | sp|Q51719|YCOBA_PROFR |    1.5298 | 30.851%          | No                | --            |
+|      8 | sp|Q82MV1|SSUB1_STRAW |    1.5298 | 29.515%          | No                | --            |
+|      9 | sp|A0K739|SSUB1_BURCH |    1.5298 | 32.906%          | No                | --            |
+|     10 | sp|Q28433|TAP1_GORGO  |    1.5298 | 27.383%          | No                | --            |
+|     11 | sp|Q60AI1|POTA_METCA  |    1.5298 | 33.585%          | No                | --            |
+|     12 | sp|P9WQJ4|OPPD_MYCTO  |    1.5298 | 26.887%          | No                | --            |
+|     13 | sp|Q7VZE5|CYSA_BORPE  |    1.5298 | 29.911%          | No                | --            |
+|     14 | sp|Q7WGW1|CYSA_BORBR  |    1.5298 | 29.464%          | No                | --            |
+|     15 | sp|O70595|ABCB6_RAT   |    1.5298 | 31.915%          | No                | --            |
+|     16 | sp|Q3JSR6|SSUB_BURP1  |    1.5298 | 32.883%          | No                | --            |
+|     17 | sp|Q9NP58|ABCB6_HUMAN |    1.5298 | 31.561%          | No                | --            |
+|     18 | sp|Q2J3T0|HMUV_RHOP2  |    1.5298 | 30.769%          | No                | --            |
+|     19 | sp|Q21BF6|MODC_RHOPB  |    1.5298 | 30.415%          | No                | --            |
+|     20 | sp|A6W3V7|RECF_KINRD  |    1.5298 | 0.0%             | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID               |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|---------------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU     |    1.3334 | 27.743%          | Yes               | --            |
+|      2 | sp|Q13BH6|NDVA_RHOPS      |    1.4321 | 29.242%          | No                | --            |
+|      3 | sp|Q03024|APRD_PSEAE      |    1.5028 | 31.31%           | No                | --            |
+|      4 | sp|Q9CCJ1|MTRB_MYCLE      |    2.0971 | 0.0%             | No                | --            |
+|      5 | sp|Q5B1Q2|ATM1_EMENI      |    2.1519 | 26.25%           | Yes               | --            |
+|      6 | sp|Q8LPQ6|AB28B_ARATH     |    2.1578 | 34.914%          | No                | --            |
+|      7 | sp|Q9RCG7|PAXB_PASAE      |    2.2556 | 28.391%          | Yes               | --            |
+|      8 | sp|P9WQ32|Y1318_MYCTO     |    2.3672 | 0.0%             | No                | --            |
+|      9 | sp|P9WJY1|Y037_MYCTU      |    2.4632 | 0.0%             | No                | --            |
+|     10 | sp|Q02592|HMT1_SCHPO      |    2.4806 | 30.409%          | Yes               | --            |
+|     11 | sp|P72334|NODC_RHIS3      |    2.4986 | 0.0%             | No                | --            |
+|     12 | sp|P0A2J5|SAPC_SALTY      |    2.6823 | 0.0%             | No                | --            |
+|     13 | sp|Q5U7L7|BLBV2_ECOLX     |    2.688  | 0.0%             | No                | --            |
+|     14 | sp|P14285|CHRA_PSEAI      |    2.7083 | 0.0%             | No                | --            |
+|     15 | sp|A0A0E4AE72|AQDC1_RHOER |    2.7157 | 0.0%             | No                | --            |
+|     16 | sp|P9WMA3|Y010_MYCTU      |    2.7286 | 0.0%             | No                | --            |
+|     17 | sp|B8DN19|DNAA_NITV9      |    2.7436 | 0.0%             | No                | --            |
+|     18 | sp|Q6NLC1|AB2D_ARATH      |    2.7499 | 25.974%          | No                | --            |
+|     19 | sp|G3V8V5|KCNK4_RAT       |    2.7857 | 0.0%             | No                | --            |
+|     20 | sp|B4SZP4|YFCJ_SALNS      |    2.7902 | 0.0%             | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU |   12.1462 | 27.743%          | Yes               | --            |
+|      2 | sp|Q13BH6|NDVA_RHOPS  |   13.2088 | 29.242%          | No                | --            |
+|      3 | sp|Q03024|APRD_PSEAE  |   13.2897 | 31.31%           | No                | --            |
+|      4 | sp|Q20Z38|NDVA_RHOPB  |   13.4542 | 28.288%          | Yes               | --            |
+|      5 | sp|Q8P8W4|MSBA_XANCP  |   14.9302 | 27.778%          | No                | --            |
+|      6 | sp|Q51719|YCOBA_PROFR |   15.0713 | 30.851%          | No                | --            |
+|      7 | sp|Q82MV1|SSUB1_STRAW |   15.0849 | 29.515%          | No                | --            |
+|      8 | sp|P23886|CYDC_ECOLI  |   15.1883 | 27.8%            | No                | --            |
+|      9 | sp|Q60AI1|POTA_METCA  |   15.639  | 33.585%          | No                | --            |
+|     10 | sp|A0K739|SSUB1_BURCH |   15.6484 | 32.906%          | No                | --            |
+|     11 | sp|Q7WGW1|CYSA_BORBR  |   15.8866 | 29.464%          | No                | --            |
+|     12 | sp|A6W3V7|RECF_KINRD  |   15.8883 | 0.0%             | No                | --            |
+|     13 | sp|P9WQJ4|OPPD_MYCTO  |   16.0041 | 26.887%          | No                | --            |
+|     14 | sp|Q28433|TAP1_GORGO  |   16.0869 | 27.383%          | No                | --            |
+|     15 | sp|Q7VZE5|CYSA_BORPE  |   16.1344 | 29.911%          | No                | --            |
+|     16 | sp|Q67JX3|ECFA1_SYMTH |   16.1593 | 31.2%            | No                | --            |
+|     17 | sp|Q6NDA6|CCMA_RHOPA  |   16.1662 | 29.891%          | No                | --            |
+|     18 | sp|Q2J3T0|HMUV_RHOP2  |   16.2371 | 30.769%          | No                | --            |
+|     19 | sp|Q21BF6|MODC_RHOPB  |   16.3191 | 30.415%          | No                | --            |
+|     20 | sp|Q3JSR6|SSUB_BURP1  |   16.345  | 32.883%          | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P9WQJ3|FATRP_MYCTU |    1.3334 | 27.743%          | Yes               | --            |
+|      2 | sp|Q13BH6|NDVA_RHOPS  |    1.4321 | 29.242%          | No                | --            |
+|      3 | sp|Q03024|APRD_PSEAE  |    1.5028 | 31.31%           | No                | --            |
+|      4 | sp|Q20Z38|NDVA_RHOPB  |    1.5298 | 28.288%          | Yes               | --            |
+|      5 | sp|Q8P8W4|MSBA_XANCP  |    1.746  | 27.778%          | No                | --            |
+|      6 | sp|P23886|CYDC_ECOLI  |    1.7576 | 27.8%            | No                | --            |
+|      7 | sp|Q51719|YCOBA_PROFR |    1.7732 | 30.851%          | No                | --            |
+|      8 | sp|Q82MV1|SSUB1_STRAW |    1.7866 | 29.515%          | No                | --            |
+|      9 | sp|A0K739|SSUB1_BURCH |    1.8224 | 32.906%          | No                | --            |
+|     10 | sp|Q28433|TAP1_GORGO  |    1.8502 | 27.383%          | No                | --            |
+|     11 | sp|Q60AI1|POTA_METCA  |    1.8844 | 33.585%          | No                | --            |
+|     12 | sp|P9WQJ4|OPPD_MYCTO  |    1.8893 | 26.887%          | No                | --            |
+|     13 | sp|Q7VZE5|CYSA_BORPE  |    1.8944 | 29.911%          | No                | --            |
+|     14 | sp|Q7WGW1|CYSA_BORBR  |    1.895  | 29.464%          | No                | --            |
+|     15 | sp|O70595|ABCB6_RAT   |    1.8969 | 31.915%          | No                | --            |
+|     16 | sp|Q3JSR6|SSUB_BURP1  |    1.8992 | 32.883%          | No                | --            |
+|     17 | sp|Q9NP58|ABCB6_HUMAN |    1.9151 | 31.561%          | No                | --            |
+|     18 | sp|Q2J3T0|HMUV_RHOP2  |    1.9297 | 30.769%          | No                | --            |
+|     19 | sp|Q21BF6|MODC_RHOPB  |    1.9326 | 30.415%          | No                | --            |
+|     20 | sp|A6W3V7|RECF_KINRD  |    1.9399 | 0.0%             | No                | --            |
+
+============================================================================================================
+Query Protein: A0A009HL96
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0085 | 116.99 |                      0.75 |
+| IVF-Flat      |           0.0038 | 265.27 |                      0.75 |
+| Hypercube     |           0.0037 | 270.34 |                      0.75 |
+| IVF-PQ        |           0.0093 | 108.02 |                      0.75 |
+| Neural LSH    |           0.01   | 100.2  |                      0.75 |
+| BLAST (Ref)   |           0.354  |   2.82 |                      1    |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID              |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|--------------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q5HI09|GRAR_STAAC     |    0.6381 | 26.126%          | No                | --            |
+|      2 | sp|P33112|SPAR_BACIU     |    0.6411 | 30.837%          | No                | --            |
+|      3 | sp|Q99VW2|GRAR_STAAN     |    0.6585 | 26.126%          | No                | --            |
+|      4 | sp|Q8CQ37|GRAR_STAES     |    0.6739 | 27.928%          | Yes               | --            |
+|      5 | sp|Q99RR6|HSSR_STAAM     |    0.7471 | 31.278%          | Yes               | --            |
+|      6 | sp|Q9AE24|RPRY_BACFR     |    0.7755 | 27.632%          | Yes               | --            |
+|      7 | sp|P28257|YCF27_GALSU    |    0.7817 | 32.751%          | Yes               | --            |
+|      8 | sp|P0CAW8|CTRA_CAUVC     |    0.7875 | 31.441%          | Yes               | --            |
+|      9 | sp|A6WZ81|CTRA_BRUA4     |    0.8511 | 33.19%           | Yes               | --            |
+|     10 | sp|P45189|PHOB_HAEIN     |    0.8834 | 34.188%          | Yes               | --            |
+|     11 | sp|A0A0H2UQ68|WALR_STRPN |    0.9567 | 37.288%          | Yes               | --            |
+|     12 | sp|P0A4H8|CIAR_STRR6     |    0.9784 | 31.858%          | Yes               | --            |
+|     13 | sp|Q2FH23|ARLR_STAA3     |    1.0525 | 35.135%          | Yes               | --            |
+|     14 | sp|P0C000|ARLR_STAAM     |    1.0525 | 35.135%          | Yes               | --            |
+|     15 | sp|Q5HPC3|ARLR_STAEQ     |    1.1008 | 36.771%          | Yes               | --            |
+|     16 | sp|Q1XDE4|YCF29_PYRYE    |    1.1629 | 30.872%          | No                | --            |
+|     17 | sp|A0A0H3NGY1|OMPR_SALTS |    1.2145 | 30.702%          | Yes               | --            |
+|     18 | sp|P0AA17|OMPR_ECOL6     |    1.2145 | 30.702%          | Yes               | --            |
+|     19 | sp|Q9KM23|VXRB_VIBCH     |    1.2332 | 32.743%          | Yes               | --            |
+|     20 | sp|P26319|FIMZ_SALTY     |    1.2401 | 29.474%          | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID              |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|--------------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q5HI09|GRAR_STAAC     |    0.7471 | 26.126%          | No                | --            |
+|      2 | sp|P33112|SPAR_BACIU     |    0.7471 | 30.837%          | No                | --            |
+|      3 | sp|Q99VW2|GRAR_STAAN     |    0.7471 | 26.126%          | No                | --            |
+|      4 | sp|Q8CQ37|GRAR_STAES     |    0.7471 | 27.928%          | Yes               | --            |
+|      5 | sp|Q99RR6|HSSR_STAAM     |    0.7471 | 31.278%          | Yes               | --            |
+|      6 | sp|Q9AE24|RPRY_BACFR     |    0.7471 | 27.632%          | Yes               | --            |
+|      7 | sp|P28257|YCF27_GALSU    |    0.7471 | 32.751%          | Yes               | --            |
+|      8 | sp|P0CAW8|CTRA_CAUVC     |    0.7471 | 31.441%          | Yes               | --            |
+|      9 | sp|A6WZ81|CTRA_BRUA4     |    0.7471 | 33.19%           | Yes               | --            |
+|     10 | sp|P45189|PHOB_HAEIN     |    0.7471 | 34.188%          | Yes               | --            |
+|     11 | sp|A0A0H2UQ68|WALR_STRPN |    0.7471 | 37.288%          | Yes               | --            |
+|     12 | sp|P0A4H8|CIAR_STRR6     |    0.7471 | 31.858%          | Yes               | --            |
+|     13 | sp|P0C000|ARLR_STAAM     |    0.7471 | 35.135%          | Yes               | --            |
+|     14 | sp|Q2FH23|ARLR_STAA3     |    0.7471 | 35.135%          | Yes               | --            |
+|     15 | sp|Q5HPC3|ARLR_STAEQ     |    0.7471 | 36.771%          | Yes               | --            |
+|     16 | sp|Q1XDE4|YCF29_PYRYE    |    0.7471 | 30.872%          | No                | --            |
+|     17 | sp|A0A0H3NGY1|OMPR_SALTS |    0.7471 | 30.702%          | Yes               | --            |
+|     18 | sp|P0AA17|OMPR_ECOL6     |    0.7471 | 30.702%          | Yes               | --            |
+|     19 | sp|Q9KM23|VXRB_VIBCH     |    0.7471 | 32.743%          | Yes               | --            |
+|     20 | sp|P26319|FIMZ_SALTY     |    0.7471 | 29.474%          | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID              |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|--------------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q5HI09|GRAR_STAAC     |    0.6381 | 26.126%          | No                | --            |
+|      2 | sp|P33112|SPAR_BACIU     |    0.6411 | 30.837%          | No                | --            |
+|      3 | sp|Q99VW2|GRAR_STAAN     |    0.6585 | 26.126%          | No                | --            |
+|      4 | sp|Q8CQ37|GRAR_STAES     |    0.6739 | 27.928%          | Yes               | --            |
+|      5 | sp|Q99RR6|HSSR_STAAM     |    0.7471 | 31.278%          | Yes               | --            |
+|      6 | sp|Q9AE24|RPRY_BACFR     |    0.7755 | 27.632%          | Yes               | --            |
+|      7 | sp|P28257|YCF27_GALSU    |    0.7817 | 32.751%          | Yes               | --            |
+|      8 | sp|P0CAW8|CTRA_CAUVC     |    0.7875 | 31.441%          | Yes               | --            |
+|      9 | sp|A6WZ81|CTRA_BRUA4     |    0.8511 | 33.19%           | Yes               | --            |
+|     10 | sp|P45189|PHOB_HAEIN     |    0.8834 | 34.188%          | Yes               | --            |
+|     11 | sp|A0A0H2UQ68|WALR_STRPN |    0.9567 | 37.288%          | Yes               | --            |
+|     12 | sp|P0A4H8|CIAR_STRR6     |    0.9784 | 31.858%          | Yes               | --            |
+|     13 | sp|Q2FH23|ARLR_STAA3     |    1.0525 | 35.135%          | Yes               | --            |
+|     14 | sp|P0C000|ARLR_STAAM     |    1.0525 | 35.135%          | Yes               | --            |
+|     15 | sp|Q5HPC3|ARLR_STAEQ     |    1.1008 | 36.771%          | Yes               | --            |
+|     16 | sp|Q1XDE4|YCF29_PYRYE    |    1.1629 | 30.872%          | No                | --            |
+|     17 | sp|P0AA17|OMPR_ECOL6     |    1.2145 | 30.702%          | Yes               | --            |
+|     18 | sp|A0A0H3NGY1|OMPR_SALTS |    1.2145 | 30.702%          | Yes               | --            |
+|     19 | sp|Q9KM23|VXRB_VIBCH     |    1.2332 | 32.743%          | Yes               | --            |
+|     20 | sp|P26319|FIMZ_SALTY     |    1.2401 | 29.474%          | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID              |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|--------------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q5HI09|GRAR_STAAC     |    6.5821 | 26.126%          | No                | --            |
+|      2 | sp|Q99VW2|GRAR_STAAN     |    6.6751 | 26.126%          | No                | --            |
+|      3 | sp|Q99RR6|HSSR_STAAM     |    6.7103 | 31.278%          | Yes               | --            |
+|      4 | sp|Q8CQ37|GRAR_STAES     |    6.7198 | 27.928%          | Yes               | --            |
+|      5 | sp|P33112|SPAR_BACIU     |    6.8328 | 30.837%          | No                | --            |
+|      6 | sp|P28257|YCF27_GALSU    |    7.2875 | 32.751%          | Yes               | --            |
+|      7 | sp|Q9AE24|RPRY_BACFR     |    7.564  | 27.632%          | Yes               | --            |
+|      8 | sp|P0CAW8|CTRA_CAUVC     |    7.6329 | 31.441%          | Yes               | --            |
+|      9 | sp|A6WZ81|CTRA_BRUA4     |    7.7091 | 33.19%           | Yes               | --            |
+|     10 | sp|P45189|PHOB_HAEIN     |    7.7787 | 34.188%          | Yes               | --            |
+|     11 | sp|Q5HPC3|ARLR_STAEQ     |    7.862  | 36.771%          | Yes               | --            |
+|     12 | sp|P0A4H8|CIAR_STRR6     |    7.9159 | 31.858%          | Yes               | --            |
+|     13 | sp|P0C000|ARLR_STAAM     |    8.0014 | 35.135%          | Yes               | --            |
+|     14 | sp|Q2FH23|ARLR_STAA3     |    8.0014 | 35.135%          | Yes               | --            |
+|     15 | sp|A0A0H2UQ68|WALR_STRPN |    8.2055 | 37.288%          | Yes               | --            |
+|     16 | sp|Q9KM23|VXRB_VIBCH     |   10.0654 | 32.743%          | Yes               | --            |
+|     17 | sp|Q1XDE4|YCF29_PYRYE    |   10.572  | 30.872%          | No                | --            |
+|     18 | sp|P26319|FIMZ_SALTY     |   11.0949 | 29.474%          | No                | --            |
+|     19 | sp|P0AA17|OMPR_ECOL6     |   11.2204 | 30.702%          | Yes               | --            |
+|     20 | sp|A0A0H3NGY1|OMPR_SALTS |   11.2204 | 30.702%          | Yes               | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID              |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|--------------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q5HI09|GRAR_STAAC     |    0.6381 | 26.126%          | No                | --            |
+|      2 | sp|P33112|SPAR_BACIU     |    0.6411 | 30.837%          | No                | --            |
+|      3 | sp|Q99VW2|GRAR_STAAN     |    0.6585 | 26.126%          | No                | --            |
+|      4 | sp|Q8CQ37|GRAR_STAES     |    0.6739 | 27.928%          | Yes               | --            |
+|      5 | sp|Q99RR6|HSSR_STAAM     |    0.7471 | 31.278%          | Yes               | --            |
+|      6 | sp|Q9AE24|RPRY_BACFR     |    0.7755 | 27.632%          | Yes               | --            |
+|      7 | sp|P28257|YCF27_GALSU    |    0.7817 | 32.751%          | Yes               | --            |
+|      8 | sp|P0CAW8|CTRA_CAUVC     |    0.7875 | 31.441%          | Yes               | --            |
+|      9 | sp|A6WZ81|CTRA_BRUA4     |    0.8511 | 33.19%           | Yes               | --            |
+|     10 | sp|P45189|PHOB_HAEIN     |    0.8834 | 34.188%          | Yes               | --            |
+|     11 | sp|A0A0H2UQ68|WALR_STRPN |    0.9567 | 37.288%          | Yes               | --            |
+|     12 | sp|P0A4H8|CIAR_STRR6     |    0.9784 | 31.858%          | Yes               | --            |
+|     13 | sp|Q2FH23|ARLR_STAA3     |    1.0524 | 35.135%          | Yes               | --            |
+|     14 | sp|P0C000|ARLR_STAAM     |    1.0524 | 35.135%          | Yes               | --            |
+|     15 | sp|Q5HPC3|ARLR_STAEQ     |    1.1008 | 36.771%          | Yes               | --            |
+|     16 | sp|Q1XDE4|YCF29_PYRYE    |    1.1629 | 30.872%          | No                | --            |
+|     17 | sp|A0A0H3NGY1|OMPR_SALTS |    1.2145 | 30.702%          | Yes               | --            |
+|     18 | sp|P0AA17|OMPR_ECOL6     |    1.2145 | 30.702%          | Yes               | --            |
+|     19 | sp|Q9KM23|VXRB_VIBCH     |    1.2332 | 32.743%          | Yes               | --            |
+|     20 | sp|P26319|FIMZ_SALTY     |    1.2401 | 29.474%          | No                | --            |
+
+============================================================================================================
+Query Protein: A0A009HLV9
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0093 | 107.37 |                      0.75 |
+| IVF-Flat      |           0.0053 | 189.08 |                      0.75 |
+| Hypercube     |           0.0037 | 267.19 |                      0.75 |
+| IVF-PQ        |           0.01   | 100.03 |                      0.7  |
+| Neural LSH    |           0.0107 |  93.07 |                      0.75 |
+| BLAST (Ref)   |           0.354  |   2.82 |                      1    |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID          |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P28787|NTRC_PROHU |    0.5685 | 62.527%          | Yes               | --            |
+|      2 | sp|Q06065|ATOC_ECOLI |    0.885  | 41.336%          | Yes               | --            |
+|      3 | sp|Q5E3W8|NORR_ALIF1 |    0.9141 | 44.118%          | Yes               | --            |
+|      4 | sp|P23747|ALGB_PSEAE |    0.9473 | 40.0%            | Yes               | --            |
+|      5 | sp|O87455|LUXO_VIBC3 |    0.9549 | 39.56%           | Yes               | --            |
+|      6 | sp|P59402|NORR_SHIFL |    0.9851 | 40.328%          | Yes               | --            |
+|      7 | sp|A8A3I6|NORR_ECOHS |    0.9967 | 38.244%          | Yes               | --            |
+|      8 | sp|B6I695|NORR_ECOSE |    1.0066 | 40.984%          | Yes               | --            |
+|      9 | sp|A1KU52|RUVB_NEIMF |    1.0078 | 0.0%             | No                | --            |
+|     10 | sp|B7N6T9|NORR_ECOLU |    1.0107 | 45.455%          | Yes               | --            |
+|     11 | sp|Q0TEH1|NORR_ECOL5 |    1.0123 | 40.656%          | Yes               | --            |
+|     12 | sp|P36219|WTSA_PANSE |    1.0227 | 40.865%          | Yes               | --            |
+|     13 | sp|B4T3B0|NORR_SALNS |    1.0274 | 38.398%          | Yes               | --            |
+|     14 | sp|B4TT16|NORR_SALSV |    1.0372 | 38.122%          | Yes               | --            |
+|     15 | sp|Q8EEF3|RUVB_SHEON |    1.0476 | 0.0%             | No                | --            |
+|     16 | sp|P37931|HRPS_PSESY |    1.0602 | 41.627%          | Yes               | --            |
+|     17 | sp|Q3K999|SFNR_PSEPF |    1.0668 | 37.681%          | Yes               | --            |
+|     18 | sp|B5F3J7|RUVB_SALA4 |    1.085  | 0.0%             | No                | --            |
+|     19 | sp|P66756|RUVB_SALTI |    1.085  | 0.0%             | No                | --            |
+|     20 | sp|P0A812|RUVB_ECOLI |    1.0911 | 0.0%             | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID          |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P28787|NTRC_PROHU |    0.9851 | 62.527%          | Yes               | --            |
+|      2 | sp|Q06065|ATOC_ECOLI |    0.9851 | 41.336%          | Yes               | --            |
+|      3 | sp|Q5E3W8|NORR_ALIF1 |    0.9851 | 44.118%          | Yes               | --            |
+|      4 | sp|P23747|ALGB_PSEAE |    0.9851 | 40.0%            | Yes               | --            |
+|      5 | sp|O87455|LUXO_VIBC3 |    0.9851 | 39.56%           | Yes               | --            |
+|      6 | sp|P59402|NORR_SHIFL |    0.9851 | 40.328%          | Yes               | --            |
+|      7 | sp|A8A3I6|NORR_ECOHS |    0.9851 | 38.244%          | Yes               | --            |
+|      8 | sp|B6I695|NORR_ECOSE |    0.9851 | 40.984%          | Yes               | --            |
+|      9 | sp|A1KU52|RUVB_NEIMF |    0.9851 | 0.0%             | No                | --            |
+|     10 | sp|B7N6T9|NORR_ECOLU |    0.9851 | 45.455%          | Yes               | --            |
+|     11 | sp|Q0TEH1|NORR_ECOL5 |    0.9851 | 40.656%          | Yes               | --            |
+|     12 | sp|P36219|WTSA_PANSE |    0.9851 | 40.865%          | Yes               | --            |
+|     13 | sp|B4T3B0|NORR_SALNS |    0.9851 | 38.398%          | Yes               | --            |
+|     14 | sp|B4TT16|NORR_SALSV |    0.9851 | 38.122%          | Yes               | --            |
+|     15 | sp|Q8EEF3|RUVB_SHEON |    0.9851 | 0.0%             | No                | --            |
+|     16 | sp|P37931|HRPS_PSESY |    0.9851 | 41.627%          | Yes               | --            |
+|     17 | sp|Q3K999|SFNR_PSEPF |    0.9851 | 37.681%          | Yes               | --            |
+|     18 | sp|P66756|RUVB_SALTI |    0.9851 | 0.0%             | No                | --            |
+|     19 | sp|B5F3J7|RUVB_SALA4 |    0.9851 | 0.0%             | No                | --            |
+|     20 | sp|P0A812|RUVB_ECOLI |    0.9851 | 0.0%             | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID          |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P28787|NTRC_PROHU |    0.5685 | 62.527%          | Yes               | --            |
+|      2 | sp|Q06065|ATOC_ECOLI |    0.885  | 41.336%          | Yes               | --            |
+|      3 | sp|Q5E3W8|NORR_ALIF1 |    0.9141 | 44.118%          | Yes               | --            |
+|      4 | sp|P23747|ALGB_PSEAE |    0.9473 | 40.0%            | Yes               | --            |
+|      5 | sp|O87455|LUXO_VIBC3 |    0.9549 | 39.56%           | Yes               | --            |
+|      6 | sp|P59402|NORR_SHIFL |    0.9851 | 40.328%          | Yes               | --            |
+|      7 | sp|A8A3I6|NORR_ECOHS |    0.9967 | 38.244%          | Yes               | --            |
+|      8 | sp|B6I695|NORR_ECOSE |    1.0066 | 40.984%          | Yes               | --            |
+|      9 | sp|A1KU52|RUVB_NEIMF |    1.0078 | 0.0%             | No                | --            |
+|     10 | sp|B7N6T9|NORR_ECOLU |    1.0107 | 45.455%          | Yes               | --            |
+|     11 | sp|Q0TEH1|NORR_ECOL5 |    1.0123 | 40.656%          | Yes               | --            |
+|     12 | sp|P36219|WTSA_PANSE |    1.0227 | 40.865%          | Yes               | --            |
+|     13 | sp|B4T3B0|NORR_SALNS |    1.0274 | 38.398%          | Yes               | --            |
+|     14 | sp|B4TT16|NORR_SALSV |    1.0372 | 38.122%          | Yes               | --            |
+|     15 | sp|Q8EEF3|RUVB_SHEON |    1.0476 | 0.0%             | No                | --            |
+|     16 | sp|P37931|HRPS_PSESY |    1.0602 | 41.627%          | Yes               | --            |
+|     17 | sp|Q3K999|SFNR_PSEPF |    1.0668 | 37.681%          | Yes               | --            |
+|     18 | sp|P66756|RUVB_SALTI |    1.085  | 0.0%             | No                | --            |
+|     19 | sp|B5F3J7|RUVB_SALA4 |    1.085  | 0.0%             | No                | --            |
+|     20 | sp|P0A812|RUVB_ECOLI |    1.0911 | 0.0%             | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID          |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P28787|NTRC_PROHU |    6.4885 | 62.527%          | Yes               | --            |
+|      2 | sp|Q06065|ATOC_ECOLI |    8.0542 | 41.336%          | Yes               | --            |
+|      3 | sp|O87455|LUXO_VIBC3 |    8.1749 | 39.56%           | Yes               | --            |
+|      4 | sp|B4TT16|NORR_SALSV |    8.3895 | 38.122%          | Yes               | --            |
+|      5 | sp|Q5E3W8|NORR_ALIF1 |    8.4214 | 44.118%          | Yes               | --            |
+|      6 | sp|B4T3B0|NORR_SALNS |    8.4257 | 38.398%          | Yes               | --            |
+|      7 | sp|Q0TEH1|NORR_ECOL5 |    8.6011 | 40.656%          | Yes               | --            |
+|      8 | sp|B7N6T9|NORR_ECOLU |    8.6015 | 45.455%          | Yes               | --            |
+|      9 | sp|B6I695|NORR_ECOSE |    8.6164 | 40.984%          | Yes               | --            |
+|     10 | sp|P59402|NORR_SHIFL |    8.6174 | 40.328%          | Yes               | --            |
+|     11 | sp|A8A3I6|NORR_ECOHS |    8.6558 | 38.244%          | Yes               | --            |
+|     12 | sp|P23747|ALGB_PSEAE |    8.7234 | 40.0%            | Yes               | --            |
+|     13 | sp|A1KU52|RUVB_NEIMF |    8.7442 | 0.0%             | No                | --            |
+|     14 | sp|B5F3J7|RUVB_SALA4 |    9.0858 | 0.0%             | No                | --            |
+|     15 | sp|P66756|RUVB_SALTI |    9.0858 | 0.0%             | No                | --            |
+|     16 | sp|Q3K999|SFNR_PSEPF |    9.1345 | 37.681%          | Yes               | --            |
+|     17 | sp|Q8EEF3|RUVB_SHEON |    9.1836 | 0.0%             | No                | --            |
+|     18 | sp|P36219|WTSA_PANSE |    9.1977 | 40.865%          | Yes               | --            |
+|     19 | sp|Q03R36|RUVB_LEVBA |    9.2345 | 0.0%             | No                | --            |
+|     20 | sp|B7NBL1|RUVB_ECOLU |    9.3096 | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID          |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P28787|NTRC_PROHU |    0.5685 | 62.527%          | Yes               | --            |
+|      2 | sp|Q06065|ATOC_ECOLI |    0.885  | 41.336%          | Yes               | --            |
+|      3 | sp|Q5E3W8|NORR_ALIF1 |    0.9141 | 44.118%          | Yes               | --            |
+|      4 | sp|P23747|ALGB_PSEAE |    0.9473 | 40.0%            | Yes               | --            |
+|      5 | sp|O87455|LUXO_VIBC3 |    0.9549 | 39.56%           | Yes               | --            |
+|      6 | sp|P59402|NORR_SHIFL |    0.9851 | 40.328%          | Yes               | --            |
+|      7 | sp|A8A3I6|NORR_ECOHS |    0.9967 | 38.244%          | Yes               | --            |
+|      8 | sp|B6I695|NORR_ECOSE |    1.0066 | 40.984%          | Yes               | --            |
+|      9 | sp|A1KU52|RUVB_NEIMF |    1.0078 | 0.0%             | No                | --            |
+|     10 | sp|B7N6T9|NORR_ECOLU |    1.0107 | 45.455%          | Yes               | --            |
+|     11 | sp|Q0TEH1|NORR_ECOL5 |    1.0123 | 40.656%          | Yes               | --            |
+|     12 | sp|P36219|WTSA_PANSE |    1.0227 | 40.865%          | Yes               | --            |
+|     13 | sp|B4T3B0|NORR_SALNS |    1.0274 | 38.398%          | Yes               | --            |
+|     14 | sp|B4TT16|NORR_SALSV |    1.0372 | 38.122%          | Yes               | --            |
+|     15 | sp|Q8EEF3|RUVB_SHEON |    1.0476 | 0.0%             | No                | --            |
+|     16 | sp|P37931|HRPS_PSESY |    1.0602 | 41.627%          | Yes               | --            |
+|     17 | sp|Q3K999|SFNR_PSEPF |    1.0668 | 37.681%          | Yes               | --            |
+|     18 | sp|P66756|RUVB_SALTI |    1.0849 | 0.0%             | No                | --            |
+|     19 | sp|B5F3J7|RUVB_SALA4 |    1.0849 | 0.0%             | No                | --            |
+|     20 | sp|P0A812|RUVB_ECOLI |    1.0911 | 0.0%             | No                | --            |
+
+============================================================================================================
+Query Protein: A0A009HN45
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.012  |  83.09 |                     0.545 |
+| IVF-Flat      |           0.0093 | 107.51 |                     0.545 |
+| Hypercube     |           0.0035 | 286.06 |                     0.545 |
+| IVF-PQ        |           0.0121 |  82.89 |                     0.545 |
+| Neural LSH    |           0.0075 | 132.48 |                     0.545 |
+| BLAST (Ref)   |           0.354  |   2.82 |                     1     |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|A7MSB2|RAPA_VIBC1  |    0.6815 | 36.434%          | Yes               | --            |
+|      2 | sp|Q9ZDW2|UVRB_RICPR  |    0.7386 | 0.0%             | No                | --            |
+|      3 | sp|B0BT63|RAPA_ACTPJ  |    0.7596 | 33.594%          | Yes               | --            |
+|      4 | sp|P52126|ABPB_ECOLI  |    0.7907 | 0.0%             | No                | --            |
+|      5 | sp|Q0HMR2|RAPA_SHESM  |    0.7916 | 23.364%          | Yes               | --            |
+|      6 | sp|Q0HR19|RAPA_SHESR  |    0.7956 | 23.676%          | Yes               | --            |
+|      7 | sp|Q99ZA5|UVRB_STRP1  |    0.8049 | 0.0%             | No                | --            |
+|      8 | sp|Q1JBD1|UVRB_STRPB  |    0.8058 | 0.0%             | No                | --            |
+|      9 | sp|Q5X0E6|UVRB_LEGPL  |    0.827  | 0.0%             | No                | --            |
+|     10 | sp|A6QKD8|SECA2_STAAE |    0.8301 | 0.0%             | No                | --            |
+|     11 | sp|A1A7A6|RAPA_ECOK1  |    0.8374 | 38.053%          | Yes               | --            |
+|     12 | sp|Q3K063|SECA2_STRA1 |    0.8387 | 0.0%             | No                | --            |
+|     13 | sp|P0C9B2|VF706_ASFWA |    0.8442 | 0.0%             | No                | --            |
+|     14 | sp|A7ZW09|RAPA_ECOHS  |    0.8448 | 38.053%          | Yes               | --            |
+|     15 | sp|Q03AL7|UVRB_LACP3  |    0.8552 | 0.0%             | No                | --            |
+|     16 | sp|Q1MQP3|SECA_LAWIP  |    0.8652 | 0.0%             | No                | --            |
+|     17 | sp|Q9ZKA0|UVRB_HELPJ  |    0.8666 | 0.0%             | No                | --            |
+|     18 | sp|Q50939|UVRB_NEIGO  |    0.8679 | 0.0%             | No                | --            |
+|     19 | sp|C0MBD7|UVRB_STRE4  |    0.8764 | 0.0%             | No                | --            |
+|     20 | sp|A7FKM4|UVRB_YERP3  |    0.8902 | 0.0%             | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|A7MSB2|RAPA_VIBC1  |    0.8049 | 36.434%          | Yes               | --            |
+|      2 | sp|Q9ZDW2|UVRB_RICPR  |    0.8049 | 0.0%             | No                | --            |
+|      3 | sp|B0BT63|RAPA_ACTPJ  |    0.8049 | 33.594%          | Yes               | --            |
+|      4 | sp|P52126|ABPB_ECOLI  |    0.8049 | 0.0%             | No                | --            |
+|      5 | sp|Q0HMR2|RAPA_SHESM  |    0.8049 | 23.364%          | Yes               | --            |
+|      6 | sp|Q0HR19|RAPA_SHESR  |    0.8049 | 23.676%          | Yes               | --            |
+|      7 | sp|Q99ZA5|UVRB_STRP1  |    0.8049 | 0.0%             | No                | --            |
+|      8 | sp|Q1JBD1|UVRB_STRPB  |    0.8049 | 0.0%             | No                | --            |
+|      9 | sp|Q5X0E6|UVRB_LEGPL  |    0.8049 | 0.0%             | No                | --            |
+|     10 | sp|A6QKD8|SECA2_STAAE |    0.8049 | 0.0%             | No                | --            |
+|     11 | sp|A1A7A6|RAPA_ECOK1  |    0.8049 | 38.053%          | Yes               | --            |
+|     12 | sp|Q3K063|SECA2_STRA1 |    0.8049 | 0.0%             | No                | --            |
+|     13 | sp|P0C9B2|VF706_ASFWA |    0.8049 | 0.0%             | No                | --            |
+|     14 | sp|A7ZW09|RAPA_ECOHS  |    0.8049 | 38.053%          | Yes               | --            |
+|     15 | sp|Q03AL7|UVRB_LACP3  |    0.8049 | 0.0%             | No                | --            |
+|     16 | sp|Q1MQP3|SECA_LAWIP  |    0.8049 | 0.0%             | No                | --            |
+|     17 | sp|Q9ZKA0|UVRB_HELPJ  |    0.8049 | 0.0%             | No                | --            |
+|     18 | sp|Q50939|UVRB_NEIGO  |    0.8049 | 0.0%             | No                | --            |
+|     19 | sp|C0MBD7|UVRB_STRE4  |    0.8049 | 0.0%             | No                | --            |
+|     20 | sp|A7FKM4|UVRB_YERP3  |    0.8049 | 0.0%             | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|A7MSB2|RAPA_VIBC1  |    0.6815 | 36.434%          | Yes               | --            |
+|      2 | sp|Q9ZDW2|UVRB_RICPR  |    0.7386 | 0.0%             | No                | --            |
+|      3 | sp|B0BT63|RAPA_ACTPJ  |    0.7596 | 33.594%          | Yes               | --            |
+|      4 | sp|P52126|ABPB_ECOLI  |    0.7907 | 0.0%             | No                | --            |
+|      5 | sp|Q0HMR2|RAPA_SHESM  |    0.7916 | 23.364%          | Yes               | --            |
+|      6 | sp|Q0HR19|RAPA_SHESR  |    0.7956 | 23.676%          | Yes               | --            |
+|      7 | sp|Q99ZA5|UVRB_STRP1  |    0.8049 | 0.0%             | No                | --            |
+|      8 | sp|Q1JBD1|UVRB_STRPB  |    0.8058 | 0.0%             | No                | --            |
+|      9 | sp|Q5X0E6|UVRB_LEGPL  |    0.827  | 0.0%             | No                | --            |
+|     10 | sp|A6QKD8|SECA2_STAAE |    0.8301 | 0.0%             | No                | --            |
+|     11 | sp|A1A7A6|RAPA_ECOK1  |    0.8374 | 38.053%          | Yes               | --            |
+|     12 | sp|Q3K063|SECA2_STRA1 |    0.8387 | 0.0%             | No                | --            |
+|     13 | sp|P0C9B2|VF706_ASFWA |    0.8442 | 0.0%             | No                | --            |
+|     14 | sp|A7ZW09|RAPA_ECOHS  |    0.8448 | 38.053%          | Yes               | --            |
+|     15 | sp|Q03AL7|UVRB_LACP3  |    0.8552 | 0.0%             | No                | --            |
+|     16 | sp|Q1MQP3|SECA_LAWIP  |    0.8652 | 0.0%             | No                | --            |
+|     17 | sp|Q9ZKA0|UVRB_HELPJ  |    0.8666 | 0.0%             | No                | --            |
+|     18 | sp|Q50939|UVRB_NEIGO  |    0.8679 | 0.0%             | No                | --            |
+|     19 | sp|C0MBD7|UVRB_STRE4  |    0.8764 | 0.0%             | No                | --            |
+|     20 | sp|A7FKM4|UVRB_YERP3  |    0.8902 | 0.0%             | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|A7MSB2|RAPA_VIBC1  |    5.9854 | 36.434%          | Yes               | --            |
+|      2 | sp|Q9ZDW2|UVRB_RICPR  |    6.2534 | 0.0%             | No                | --            |
+|      3 | sp|B0BT63|RAPA_ACTPJ  |    6.3484 | 33.594%          | Yes               | --            |
+|      4 | sp|A6QKD8|SECA2_STAAE |    6.423  | 0.0%             | No                | --            |
+|      5 | sp|Q0HR19|RAPA_SHESR  |    6.5658 | 23.676%          | Yes               | --            |
+|      6 | sp|Q0HMR2|RAPA_SHESM  |    6.6674 | 23.364%          | Yes               | --            |
+|      7 | sp|Q3K063|SECA2_STRA1 |    6.6755 | 0.0%             | No                | --            |
+|      8 | sp|Q1MQP3|SECA_LAWIP  |    6.8378 | 0.0%             | No                | --            |
+|      9 | sp|Q7VJC6|SECA_HELHP  |    6.9965 | 0.0%             | No                | --            |
+|     10 | sp|A8GVH8|SECA_RICB8  |    7.0385 | 0.0%             | No                | --            |
+|     11 | sp|P52126|ABPB_ECOLI  |    7.0571 | 0.0%             | No                | --            |
+|     12 | sp|Q92H92|SECA_RICCN  |    7.109  | 0.0%             | No                | --            |
+|     13 | sp|Q821L5|SECA_CHLCV  |    7.1414 | 0.0%             | No                | --            |
+|     14 | sp|Q99ZA5|UVRB_STRP1  |    7.1415 | 0.0%             | No                | --            |
+|     15 | sp|Q5X0E6|UVRB_LEGPL  |    7.1554 | 0.0%             | No                | --            |
+|     16 | sp|A8GSU6|SECA_RICRS  |    7.1916 | 0.0%             | No                | --            |
+|     17 | sp|Q1JBD1|UVRB_STRPB  |    7.1925 | 0.0%             | No                | --            |
+|     18 | sp|A1A7A6|RAPA_ECOK1  |    7.3445 | 38.053%          | Yes               | --            |
+|     19 | sp|A7ZW09|RAPA_ECOHS  |    7.4667 | 38.053%          | Yes               | --            |
+|     20 | sp|Q9ZKA0|UVRB_HELPJ  |    7.4809 | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|A7MSB2|RAPA_VIBC1  |    0.6815 | 36.434%          | Yes               | --            |
+|      2 | sp|Q9ZDW2|UVRB_RICPR  |    0.7386 | 0.0%             | No                | --            |
+|      3 | sp|B0BT63|RAPA_ACTPJ  |    0.7596 | 33.594%          | Yes               | --            |
+|      4 | sp|P52126|ABPB_ECOLI  |    0.7907 | 0.0%             | No                | --            |
+|      5 | sp|Q0HMR2|RAPA_SHESM  |    0.7916 | 23.364%          | Yes               | --            |
+|      6 | sp|Q0HR19|RAPA_SHESR  |    0.7956 | 23.676%          | Yes               | --            |
+|      7 | sp|Q99ZA5|UVRB_STRP1  |    0.8049 | 0.0%             | No                | --            |
+|      8 | sp|Q1JBD1|UVRB_STRPB  |    0.8058 | 0.0%             | No                | --            |
+|      9 | sp|Q5X0E6|UVRB_LEGPL  |    0.827  | 0.0%             | No                | --            |
+|     10 | sp|A6QKD8|SECA2_STAAE |    0.8301 | 0.0%             | No                | --            |
+|     11 | sp|A1A7A6|RAPA_ECOK1  |    0.8374 | 38.053%          | Yes               | --            |
+|     12 | sp|Q3K063|SECA2_STRA1 |    0.8387 | 0.0%             | No                | --            |
+|     13 | sp|P0C9B2|VF706_ASFWA |    0.8442 | 0.0%             | No                | --            |
+|     14 | sp|A7ZW09|RAPA_ECOHS  |    0.8448 | 38.053%          | Yes               | --            |
+|     15 | sp|Q03AL7|UVRB_LACP3  |    0.8552 | 0.0%             | No                | --            |
+|     16 | sp|Q1MQP3|SECA_LAWIP  |    0.8652 | 0.0%             | No                | --            |
+|     17 | sp|Q9ZKA0|UVRB_HELPJ  |    0.8666 | 0.0%             | No                | --            |
+|     18 | sp|Q50939|UVRB_NEIGO  |    0.8679 | 0.0%             | No                | --            |
+|     19 | sp|C0MBD7|UVRB_STRE4  |    0.8764 | 0.0%             | No                | --            |
+|     20 | sp|A7FKM4|UVRB_YERP3  |    0.8902 | 0.0%             | No                | --            |
+
+============================================================================================================
+Query Protein: A0A009HQC9
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0113 |  88.33 |                       0.6 |
+| IVF-Flat      |           0.0089 | 112.63 |                       0.6 |
+| Hypercube     |           0.0038 | 262.19 |                       0.6 |
+| IVF-PQ        |           0.0118 |  84.98 |                       0.6 |
+| Neural LSH    |           0.0085 | 117.47 |                       0.6 |
+| BLAST (Ref)   |           0.354  |   2.82 |                       1   |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID          |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q0HR19|RAPA_SHESR |    0.5185 | 44.547%          | Yes               | --            |
+|      2 | sp|Q0HMR2|RAPA_SHESM |    0.5204 | 44.342%          | Yes               | --            |
+|      3 | sp|A0KGL5|RAPA_AERHH |    0.5213 | 45.228%          | Yes               | --            |
+|      4 | sp|A1A7A6|RAPA_ECOK1 |    0.5733 | 42.165%          | Yes               | --            |
+|      5 | sp|A7ZW09|RAPA_ECOHS |    0.5785 | 42.268%          | Yes               | --            |
+|      6 | sp|B0BT63|RAPA_ACTPJ |    0.5788 | 40.441%          | Yes               | --            |
+|      7 | sp|A7MSB2|RAPA_VIBC1 |    0.5855 | 44.043%          | Yes               | --            |
+|      8 | sp|Q48LP5|RAPA_PSE14 |    0.6086 | 44.142%          | Yes               | --            |
+|      9 | sp|B5FI41|RAPA_SALDC |    0.6097 | 42.268%          | Yes               | --            |
+|     10 | sp|Q5PDF0|RAPA_SALPA |    0.6127 | 42.268%          | Yes               | --            |
+|     11 | sp|Q3KGV8|RAPA_PSEPF |    0.6689 | 45.35%           | Yes               | --            |
+|     12 | sp|Q9HYT6|RAPA_PSEAE |    0.745  | 46.362%          | Yes               | --            |
+|     13 | sp|A7FKM4|UVRB_YERP3 |    0.939  | 0.0%             | No                | --            |
+|     14 | sp|C5BEJ2|UVRB_EDWI9 |    0.9413 | 0.0%             | No                | --            |
+|     15 | sp|B5F076|UVRB_SALA4 |    0.9854 | 0.0%             | No                | --            |
+|     16 | sp|A9MTI2|UVRB_SALPB |    0.9854 | 0.0%             | No                | --            |
+|     17 | sp|Q57RF9|UVRB_SALCH |    0.9854 | 0.0%             | No                | --            |
+|     18 | sp|C0PWY7|UVRB_SALPC |    0.9854 | 0.0%             | No                | --            |
+|     19 | sp|Q5X0E6|UVRB_LEGPL |    0.9978 | 0.0%             | No                | --            |
+|     20 | sp|A4W8C2|UVRB_ENT38 |    1.0258 | 0.0%             | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID          |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q0HR19|RAPA_SHESR |    0.6086 | 44.547%          | Yes               | --            |
+|      2 | sp|Q0HMR2|RAPA_SHESM |    0.6086 | 44.342%          | Yes               | --            |
+|      3 | sp|A0KGL5|RAPA_AERHH |    0.6086 | 45.228%          | Yes               | --            |
+|      4 | sp|A1A7A6|RAPA_ECOK1 |    0.6086 | 42.165%          | Yes               | --            |
+|      5 | sp|A7ZW09|RAPA_ECOHS |    0.6086 | 42.268%          | Yes               | --            |
+|      6 | sp|B0BT63|RAPA_ACTPJ |    0.6086 | 40.441%          | Yes               | --            |
+|      7 | sp|A7MSB2|RAPA_VIBC1 |    0.6086 | 44.043%          | Yes               | --            |
+|      8 | sp|Q48LP5|RAPA_PSE14 |    0.6086 | 44.142%          | Yes               | --            |
+|      9 | sp|B5FI41|RAPA_SALDC |    0.6086 | 42.268%          | Yes               | --            |
+|     10 | sp|Q5PDF0|RAPA_SALPA |    0.6086 | 42.268%          | Yes               | --            |
+|     11 | sp|Q3KGV8|RAPA_PSEPF |    0.6086 | 45.35%           | Yes               | --            |
+|     12 | sp|Q9HYT6|RAPA_PSEAE |    0.6086 | 46.362%          | Yes               | --            |
+|     13 | sp|A7FKM4|UVRB_YERP3 |    0.6086 | 0.0%             | No                | --            |
+|     14 | sp|C5BEJ2|UVRB_EDWI9 |    0.6086 | 0.0%             | No                | --            |
+|     15 | sp|Q57RF9|UVRB_SALCH |    0.6086 | 0.0%             | No                | --            |
+|     16 | sp|A9MTI2|UVRB_SALPB |    0.6086 | 0.0%             | No                | --            |
+|     17 | sp|B5F076|UVRB_SALA4 |    0.6086 | 0.0%             | No                | --            |
+|     18 | sp|C0PWY7|UVRB_SALPC |    0.6086 | 0.0%             | No                | --            |
+|     19 | sp|Q5X0E6|UVRB_LEGPL |    0.6086 | 0.0%             | No                | --            |
+|     20 | sp|A4W8C2|UVRB_ENT38 |    0.6086 | 0.0%             | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID          |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q0HR19|RAPA_SHESR |    0.5185 | 44.547%          | Yes               | --            |
+|      2 | sp|Q0HMR2|RAPA_SHESM |    0.5204 | 44.342%          | Yes               | --            |
+|      3 | sp|A0KGL5|RAPA_AERHH |    0.5213 | 45.228%          | Yes               | --            |
+|      4 | sp|A1A7A6|RAPA_ECOK1 |    0.5733 | 42.165%          | Yes               | --            |
+|      5 | sp|A7ZW09|RAPA_ECOHS |    0.5785 | 42.268%          | Yes               | --            |
+|      6 | sp|B0BT63|RAPA_ACTPJ |    0.5788 | 40.441%          | Yes               | --            |
+|      7 | sp|A7MSB2|RAPA_VIBC1 |    0.5855 | 44.043%          | Yes               | --            |
+|      8 | sp|Q48LP5|RAPA_PSE14 |    0.6086 | 44.142%          | Yes               | --            |
+|      9 | sp|B5FI41|RAPA_SALDC |    0.6097 | 42.268%          | Yes               | --            |
+|     10 | sp|Q5PDF0|RAPA_SALPA |    0.6127 | 42.268%          | Yes               | --            |
+|     11 | sp|Q3KGV8|RAPA_PSEPF |    0.6689 | 45.35%           | Yes               | --            |
+|     12 | sp|Q9HYT6|RAPA_PSEAE |    0.745  | 46.362%          | Yes               | --            |
+|     13 | sp|A7FKM4|UVRB_YERP3 |    0.939  | 0.0%             | No                | --            |
+|     14 | sp|C5BEJ2|UVRB_EDWI9 |    0.9413 | 0.0%             | No                | --            |
+|     15 | sp|A9MTI2|UVRB_SALPB |    0.9854 | 0.0%             | No                | --            |
+|     16 | sp|C0PWY7|UVRB_SALPC |    0.9854 | 0.0%             | No                | --            |
+|     17 | sp|Q57RF9|UVRB_SALCH |    0.9854 | 0.0%             | No                | --            |
+|     18 | sp|B5F076|UVRB_SALA4 |    0.9854 | 0.0%             | No                | --            |
+|     19 | sp|Q5X0E6|UVRB_LEGPL |    0.9978 | 0.0%             | No                | --            |
+|     20 | sp|A4W8C2|UVRB_ENT38 |    1.0258 | 0.0%             | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q0HR19|RAPA_SHESR  |    4.9781 | 44.547%          | Yes               | --            |
+|      2 | sp|Q0HMR2|RAPA_SHESM  |    5.1114 | 44.342%          | Yes               | --            |
+|      3 | sp|A0KGL5|RAPA_AERHH  |    5.3395 | 45.228%          | Yes               | --            |
+|      4 | sp|A1A7A6|RAPA_ECOK1  |    5.5926 | 42.165%          | Yes               | --            |
+|      5 | sp|A7MSB2|RAPA_VIBC1  |    5.6108 | 44.043%          | Yes               | --            |
+|      6 | sp|B0BT63|RAPA_ACTPJ  |    5.6304 | 40.441%          | Yes               | --            |
+|      7 | sp|A7ZW09|RAPA_ECOHS  |    5.6882 | 42.268%          | Yes               | --            |
+|      8 | sp|Q3KGV8|RAPA_PSEPF  |    5.7647 | 45.35%           | Yes               | --            |
+|      9 | sp|Q5PDF0|RAPA_SALPA  |    5.8377 | 42.268%          | Yes               | --            |
+|     10 | sp|B5FI41|RAPA_SALDC  |    5.8483 | 42.268%          | Yes               | --            |
+|     11 | sp|Q48LP5|RAPA_PSE14  |    5.8836 | 44.142%          | Yes               | --            |
+|     12 | sp|Q9HYT6|RAPA_PSEAE  |    6.7531 | 46.362%          | Yes               | --            |
+|     13 | sp|C5BEJ2|UVRB_EDWI9  |    8.3293 | 0.0%             | No                | --            |
+|     14 | sp|A7FKM4|UVRB_YERP3  |    8.4922 | 0.0%             | No                | --            |
+|     15 | sp|B0V514|SECA_ACIBY  |    8.6931 | 0.0%             | No                | --            |
+|     16 | sp|B7I8J5|SECA_ACIB5  |    8.6931 | 0.0%             | No                | --            |
+|     17 | sp|Q3K063|SECA2_STRA1 |    8.7241 | 0.0%             | No                | --            |
+|     18 | sp|Q5X0E6|UVRB_LEGPL  |    8.7279 | 0.0%             | No                | --            |
+|     19 | sp|C0PWY7|UVRB_SALPC  |    8.9906 | 0.0%             | No                | --            |
+|     20 | sp|A9MTI2|UVRB_SALPB  |    8.9906 | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID          |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q0HR19|RAPA_SHESR |    0.5185 | 44.547%          | Yes               | --            |
+|      2 | sp|Q0HMR2|RAPA_SHESM |    0.5204 | 44.342%          | Yes               | --            |
+|      3 | sp|A0KGL5|RAPA_AERHH |    0.5213 | 45.228%          | Yes               | --            |
+|      4 | sp|A1A7A6|RAPA_ECOK1 |    0.5733 | 42.165%          | Yes               | --            |
+|      5 | sp|A7ZW09|RAPA_ECOHS |    0.5785 | 42.268%          | Yes               | --            |
+|      6 | sp|B0BT63|RAPA_ACTPJ |    0.5788 | 40.441%          | Yes               | --            |
+|      7 | sp|A7MSB2|RAPA_VIBC1 |    0.5855 | 44.043%          | Yes               | --            |
+|      8 | sp|Q48LP5|RAPA_PSE14 |    0.6086 | 44.142%          | Yes               | --            |
+|      9 | sp|B5FI41|RAPA_SALDC |    0.6097 | 42.268%          | Yes               | --            |
+|     10 | sp|Q5PDF0|RAPA_SALPA |    0.6127 | 42.268%          | Yes               | --            |
+|     11 | sp|Q3KGV8|RAPA_PSEPF |    0.6689 | 45.35%           | Yes               | --            |
+|     12 | sp|Q9HYT6|RAPA_PSEAE |    0.745  | 46.362%          | Yes               | --            |
+|     13 | sp|A7FKM4|UVRB_YERP3 |    0.939  | 0.0%             | No                | --            |
+|     14 | sp|C5BEJ2|UVRB_EDWI9 |    0.9413 | 0.0%             | No                | --            |
+|     15 | sp|A9MTI2|UVRB_SALPB |    0.9854 | 0.0%             | No                | --            |
+|     16 | sp|B5F076|UVRB_SALA4 |    0.9854 | 0.0%             | No                | --            |
+|     17 | sp|Q57RF9|UVRB_SALCH |    0.9854 | 0.0%             | No                | --            |
+|     18 | sp|C0PWY7|UVRB_SALPC |    0.9854 | 0.0%             | No                | --            |
+|     19 | sp|Q5X0E6|UVRB_LEGPL |    0.9978 | 0.0%             | No                | --            |
+|     20 | sp|A4W8C2|UVRB_ENT38 |    1.0258 | 0.0%             | No                | --            |
+
+============================================================================================================
+Query Protein: A0A009HPM0
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0108 |  92.72 |                      0.15 |
+| IVF-Flat      |           0.0073 | 136.6  |                      0.15 |
+| Hypercube     |           0.0036 | 274.79 |                      0    |
+| IVF-PQ        |           0.0119 |  83.89 |                      0.2  |
+| Neural LSH    |           0.0096 | 104.66 |                      0.15 |
+| BLAST (Ref)   |           0.354  |   2.82 |                      1    |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q612F5|PCCA_CAEBR  |    1.2689 | 40.675%          | Yes               | --            |
+|      2 | sp|Q5I0C3|MCCA_RAT    |    1.2873 | 46.796%          | Yes               | --            |
+|      3 | sp|Q9CMJ8|RIMK_PASMU  |    1.3469 | 0.0%             | No                | --            |
+|      4 | sp|B2TWG0|TRMA_SHIB3  |    1.4318 | 0.0%             | No                | --            |
+|      5 | sp|Q6FAM6|PURT_ACIAD  |    1.4349 | 25.882%          | No                | --            |
+|      6 | sp|B1LNS5|TRMA_ECOSM  |    1.4443 | 0.0%             | No                | --            |
+|      7 | sp|Q88XP4|Y1151_LACPL |    1.4488 | 0.0%             | No                | --            |
+|      8 | sp|A1RP91|TRMA_SHESW  |    1.4494 | 0.0%             | No                | --            |
+|      9 | sp|B5BJN9|TRMA_SALPK  |    1.4523 | 0.0%             | No                | --            |
+|     10 | sp|Q5PK68|TRMA_SALPA  |    1.4523 | 0.0%             | No                | --            |
+|     11 | sp|Q07YK6|PURT_SHEFN  |    1.4578 | 26.891%          | Yes               | --            |
+|     12 | sp|Q5E320|RLMD_ALIF1  |    1.4761 | 0.0%             | No                | --            |
+|     13 | sp|B0VRJ4|RSMC_ACIBS  |    1.4772 | 0.0%             | No                | --            |
+|     14 | sp|Q7MHY6|RSMC_VIBVY  |    1.4813 | 0.0%             | No                | --            |
+|     15 | sp|A6VLF9|TRMA_ACTSZ  |    1.482  | 0.0%             | No                | --            |
+|     16 | sp|P07244|PUR2_YEAST  |    1.4896 | 0.0%             | No                | --            |
+|     17 | sp|Q7MAX6|TRMA_PHOLL  |    1.4904 | 0.0%             | No                | --            |
+|     18 | sp|A3QHZ8|RSMC_SHELP  |    1.4927 | 0.0%             | No                | --            |
+|     19 | sp|B0TUZ2|RLMC_SHEHH  |    1.4932 | 0.0%             | No                | --            |
+|     20 | sp|B0VKL3|RLMD_ACIBS  |    1.5013 | 0.0%             | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q612F5|PCCA_CAEBR  |    1.4523 | 40.675%          | Yes               | --            |
+|      2 | sp|Q5I0C3|MCCA_RAT    |    1.4523 | 46.796%          | Yes               | --            |
+|      3 | sp|Q9CMJ8|RIMK_PASMU  |    1.4523 | 0.0%             | No                | --            |
+|      4 | sp|B2TWG0|TRMA_SHIB3  |    1.4523 | 0.0%             | No                | --            |
+|      5 | sp|Q6FAM6|PURT_ACIAD  |    1.4523 | 25.882%          | No                | --            |
+|      6 | sp|B1LNS5|TRMA_ECOSM  |    1.4523 | 0.0%             | No                | --            |
+|      7 | sp|Q88XP4|Y1151_LACPL |    1.4523 | 0.0%             | No                | --            |
+|      8 | sp|A1RP91|TRMA_SHESW  |    1.4523 | 0.0%             | No                | --            |
+|      9 | sp|B5BJN9|TRMA_SALPK  |    1.4523 | 0.0%             | No                | --            |
+|     10 | sp|Q5PK68|TRMA_SALPA  |    1.4523 | 0.0%             | No                | --            |
+|     11 | sp|Q07YK6|PURT_SHEFN  |    1.4523 | 26.891%          | Yes               | --            |
+|     12 | sp|Q5E320|RLMD_ALIF1  |    1.4523 | 0.0%             | No                | --            |
+|     13 | sp|B0VRJ4|RSMC_ACIBS  |    1.4523 | 0.0%             | No                | --            |
+|     14 | sp|Q7MHY6|RSMC_VIBVY  |    1.4523 | 0.0%             | No                | --            |
+|     15 | sp|A6VLF9|TRMA_ACTSZ  |    1.4523 | 0.0%             | No                | --            |
+|     16 | sp|P07244|PUR2_YEAST  |    1.4523 | 0.0%             | No                | --            |
+|     17 | sp|Q7MAX6|TRMA_PHOLL  |    1.4523 | 0.0%             | No                | --            |
+|     18 | sp|A3QHZ8|RSMC_SHELP  |    1.4523 | 0.0%             | No                | --            |
+|     19 | sp|B0TUZ2|RLMC_SHEHH  |    1.4523 | 0.0%             | No                | --            |
+|     20 | sp|B0VKL3|RLMD_ACIBS  |    1.4523 | 0.0%             | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q9CMJ8|RIMK_PASMU  |    1.3469 | 0.0%             | No                | --            |
+|      2 | sp|Q6FAM6|PURT_ACIAD  |    1.4349 | 25.882%          | No                | --            |
+|      3 | sp|Q88XP4|Y1151_LACPL |    1.4488 | 0.0%             | No                | --            |
+|      4 | sp|Q5PK68|TRMA_SALPA  |    1.4523 | 0.0%             | No                | --            |
+|      5 | sp|B5BJN9|TRMA_SALPK  |    1.4523 | 0.0%             | No                | --            |
+|      6 | sp|Q5E320|RLMD_ALIF1  |    1.4761 | 0.0%             | No                | --            |
+|      7 | sp|B0VRJ4|RSMC_ACIBS  |    1.4772 | 0.0%             | No                | --            |
+|      8 | sp|P07244|PUR2_YEAST  |    1.4896 | 0.0%             | No                | --            |
+|      9 | sp|B0TUZ2|RLMC_SHEHH  |    1.4932 | 0.0%             | No                | --            |
+|     10 | sp|P57029|DNAG_NEIMB  |    1.5044 | 0.0%             | No                | --            |
+|     11 | sp|P77439|PTFX1_ECOLI |    1.5105 | 0.0%             | No                | --            |
+|     12 | sp|Q12SP8|TRMA_SHEDO  |    1.5184 | 0.0%             | No                | --            |
+|     13 | sp|A3D8E4|RSMC_SHEB5  |    1.5208 | 0.0%             | No                | --            |
+|     14 | sp|P44150|Y1273_HAEIN |    1.5239 | 0.0%             | No                | --            |
+|     15 | sp|Q081I3|RSMF_SHEFN  |    1.542  | 0.0%             | No                | --            |
+|     16 | sp|Q3ILQ9|CYSG_PSET1  |    1.5445 | 0.0%             | No                | --            |
+|     17 | sp|A2RDW0|DDL_STRPG   |    1.5455 | 24.324%          | No                | --            |
+|     18 | sp|Q7MPF2|CYSN_VIBVY  |    1.5575 | 0.0%             | No                | --            |
+|     19 | sp|C3LRM1|CYSN_VIBCM  |    1.5593 | 0.0%             | No                | --            |
+|     20 | sp|Q7VKR0|UVRC_HAEDU  |    1.5635 | 0.0%             | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q5I0C3|MCCA_RAT    |   10.5943 | 46.796%          | Yes               | --            |
+|      2 | sp|Q612F5|PCCA_CAEBR  |   11.1936 | 40.675%          | Yes               | --            |
+|      3 | sp|Q9CMJ8|RIMK_PASMU  |   11.4265 | 0.0%             | No                | --            |
+|      4 | sp|Q5E320|RLMD_ALIF1  |   12.1067 | 0.0%             | No                | --            |
+|      5 | sp|Q07YK6|PURT_SHEFN  |   12.1156 | 26.891%          | Yes               | --            |
+|      6 | sp|Q6FAM6|PURT_ACIAD  |   12.1519 | 25.882%          | No                | --            |
+|      7 | sp|A1RP91|TRMA_SHESW  |   12.1881 | 0.0%             | No                | --            |
+|      8 | sp|B5BJN9|TRMA_SALPK  |   12.1979 | 0.0%             | No                | --            |
+|      9 | sp|Q5PK68|TRMA_SALPA  |   12.1979 | 0.0%             | No                | --            |
+|     10 | sp|B2TWG0|TRMA_SHIB3  |   12.2046 | 0.0%             | No                | --            |
+|     11 | sp|A6VLF9|TRMA_ACTSZ  |   12.3021 | 0.0%             | No                | --            |
+|     12 | sp|A3QHZ8|RSMC_SHELP  |   12.3962 | 0.0%             | No                | --            |
+|     13 | sp|Q88XP4|Y1151_LACPL |   12.3968 | 0.0%             | No                | --            |
+|     14 | sp|Q7MAX6|TRMA_PHOLL  |   12.4163 | 0.0%             | No                | --            |
+|     15 | sp|Q7MHY6|RSMC_VIBVY  |   12.4424 | 0.0%             | No                | --            |
+|     16 | sp|Q8EBB7|PURT_SHEON  |   12.5115 | 24.481%          | Yes               | --            |
+|     17 | sp|A3D8E4|RSMC_SHEB5  |   12.5638 | 0.0%             | No                | --            |
+|     18 | sp|Q1C8V8|PURT_YERPA  |   12.5821 | 25.481%          | No                | --            |
+|     19 | sp|B1LNS5|TRMA_ECOSM  |   12.5992 | 0.0%             | No                | --            |
+|     20 | sp|B0VRJ4|RSMC_ACIBS  |   12.6037 | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q612F5|PCCA_CAEBR  |    1.2689 | 40.675%          | Yes               | --            |
+|      2 | sp|Q5I0C3|MCCA_RAT    |    1.2873 | 46.796%          | Yes               | --            |
+|      3 | sp|Q9CMJ8|RIMK_PASMU  |    1.3469 | 0.0%             | No                | --            |
+|      4 | sp|B2TWG0|TRMA_SHIB3  |    1.4318 | 0.0%             | No                | --            |
+|      5 | sp|Q6FAM6|PURT_ACIAD  |    1.4349 | 25.882%          | No                | --            |
+|      6 | sp|B1LNS5|TRMA_ECOSM  |    1.4443 | 0.0%             | No                | --            |
+|      7 | sp|Q88XP4|Y1151_LACPL |    1.4488 | 0.0%             | No                | --            |
+|      8 | sp|A1RP91|TRMA_SHESW  |    1.4494 | 0.0%             | No                | --            |
+|      9 | sp|B5BJN9|TRMA_SALPK  |    1.4523 | 0.0%             | No                | --            |
+|     10 | sp|Q5PK68|TRMA_SALPA  |    1.4523 | 0.0%             | No                | --            |
+|     11 | sp|Q07YK6|PURT_SHEFN  |    1.4578 | 26.891%          | Yes               | --            |
+|     12 | sp|Q5E320|RLMD_ALIF1  |    1.4761 | 0.0%             | No                | --            |
+|     13 | sp|B0VRJ4|RSMC_ACIBS  |    1.4772 | 0.0%             | No                | --            |
+|     14 | sp|Q7MHY6|RSMC_VIBVY  |    1.4813 | 0.0%             | No                | --            |
+|     15 | sp|A6VLF9|TRMA_ACTSZ  |    1.482  | 0.0%             | No                | --            |
+|     16 | sp|P07244|PUR2_YEAST  |    1.4896 | 0.0%             | No                | --            |
+|     17 | sp|Q7MAX6|TRMA_PHOLL  |    1.4904 | 0.0%             | No                | --            |
+|     18 | sp|A3QHZ8|RSMC_SHELP  |    1.4927 | 0.0%             | No                | --            |
+|     19 | sp|B0TUZ2|RLMC_SHEHH  |    1.4932 | 0.0%             | No                | --            |
+|     20 | sp|B0VKL3|RLMD_ACIBS  |    1.5013 | 0.0%             | No                | --            |
+
+============================================================================================================
+Query Protein: A0A009IB02
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0098 | 101.53 |                       0.9 |
+| IVF-Flat      |           0.0051 | 194.77 |                       0.9 |
+| Hypercube     |           0.0046 | 215.91 |                       0.8 |
+| IVF-PQ        |           0.0097 | 102.72 |                       0.9 |
+| Neural LSH    |           0.0111 |  89.69 |                       0.9 |
+| BLAST (Ref)   |           0.354  |   2.82 |                       1   |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P10802|ODP2_AZOVI  |    1.1865 | 45.821%          | Yes               | --            |
+|      2 | sp|P11961|ODP2_GEOSE  |    1.9795 | 33.333%          | Yes               | --            |
+|      3 | sp|Q9SQI8|ODP24_ARATH |    2.0037 | 31.915%          | Yes               | --            |
+|      4 | sp|P49786|BCCP_BACSU  |    2.0051 | 0.0%             | No                | --            |
+|      5 | sp|P22439|ODPX_BOVIN  |    2.1908 | 26.263%          | Yes               | --            |
+|      6 | sp|P43874|BCCP_HAEIN  |    2.2159 | 39.583%          | Yes               | --            |
+|      7 | sp|P29337|BCCP_STRMU  |    2.2805 | 34.483%          | Yes               | --            |
+|      8 | sp|P02904|BCCP_PROFR  |    2.3458 | 36.667%          | Yes               | --            |
+|      9 | sp|P0ABE1|BCCP_SHIFL  |    2.4367 | 29.091%          | No                | --            |
+|     10 | sp|Q06881|BCCP_NOSS1  |    2.4689 | 30.357%          | Yes               | --            |
+|     11 | sp|Q68XI8|ODO2_RICTY  |    2.5459 | 27.536%          | Yes               | --            |
+|     12 | sp|B5XWP9|RNFC_KLEP3  |    2.5546 | 0.0%             | No                | --            |
+|     13 | sp|A9N025|RSXC_SALPB  |    2.6245 | 0.0%             | No                | --            |
+|     14 | sp|A8AH10|RNFC_CITK8  |    2.6419 | 0.0%             | No                | --            |
+|     15 | sp|P39099|DEGQ_ECOLI  |    2.652  | 0.0%             | No                | --            |
+|     16 | sp|C6DH15|RNFC_PECCP  |    2.6606 | 0.0%             | No                | --            |
+|     17 | sp|P0ADA3|NLPD_ECOLI  |    2.694  | 0.0%             | No                | --            |
+|     18 | sp|P57003|TONB_NEIMA  |    2.7141 | 0.0%             | No                | --            |
+|     19 | sp|B0KV30|DEGPL_PSEPG |    2.7165 | 0.0%             | No                | --            |
+|     20 | sp|Q9Z4H7|HTRA_LACHE  |    2.7198 | 0.0%             | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P10802|ODP2_AZOVI  |    2.4689 | 45.821%          | Yes               | --            |
+|      2 | sp|P11961|ODP2_GEOSE  |    2.4689 | 33.333%          | Yes               | --            |
+|      3 | sp|Q9SQI8|ODP24_ARATH |    2.4689 | 31.915%          | Yes               | --            |
+|      4 | sp|P49786|BCCP_BACSU  |    2.4689 | 0.0%             | No                | --            |
+|      5 | sp|P22439|ODPX_BOVIN  |    2.4689 | 26.263%          | Yes               | --            |
+|      6 | sp|P43874|BCCP_HAEIN  |    2.4689 | 39.583%          | Yes               | --            |
+|      7 | sp|P29337|BCCP_STRMU  |    2.4689 | 34.483%          | Yes               | --            |
+|      8 | sp|P02904|BCCP_PROFR  |    2.4689 | 36.667%          | Yes               | --            |
+|      9 | sp|P0ABE1|BCCP_SHIFL  |    2.4689 | 29.091%          | No                | --            |
+|     10 | sp|Q06881|BCCP_NOSS1  |    2.4689 | 30.357%          | Yes               | --            |
+|     11 | sp|Q68XI8|ODO2_RICTY  |    2.4689 | 27.536%          | Yes               | --            |
+|     12 | sp|B5XWP9|RNFC_KLEP3  |    2.4689 | 0.0%             | No                | --            |
+|     13 | sp|A9N025|RSXC_SALPB  |    2.4689 | 0.0%             | No                | --            |
+|     14 | sp|A8AH10|RNFC_CITK8  |    2.4689 | 0.0%             | No                | --            |
+|     15 | sp|P39099|DEGQ_ECOLI  |    2.4689 | 0.0%             | No                | --            |
+|     16 | sp|C6DH15|RNFC_PECCP  |    2.4689 | 0.0%             | No                | --            |
+|     17 | sp|P0ADA3|NLPD_ECOLI  |    2.4689 | 0.0%             | No                | --            |
+|     18 | sp|P57003|TONB_NEIMA  |    2.4689 | 0.0%             | No                | --            |
+|     19 | sp|B0KV30|DEGPL_PSEPG |    2.4689 | 0.0%             | No                | --            |
+|     20 | sp|Q9Z4H7|HTRA_LACHE  |    2.4689 | 0.0%             | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P10802|ODP2_AZOVI  |    1.1865 | 45.821%          | Yes               | --            |
+|      2 | sp|P11961|ODP2_GEOSE  |    1.9795 | 33.333%          | Yes               | --            |
+|      3 | sp|Q9SQI8|ODP24_ARATH |    2.0037 | 31.915%          | Yes               | --            |
+|      4 | sp|P49786|BCCP_BACSU  |    2.0051 | 0.0%             | No                | --            |
+|      5 | sp|P22439|ODPX_BOVIN  |    2.1908 | 26.263%          | Yes               | --            |
+|      6 | sp|P43874|BCCP_HAEIN  |    2.2159 | 39.583%          | Yes               | --            |
+|      7 | sp|P29337|BCCP_STRMU  |    2.2805 | 34.483%          | Yes               | --            |
+|      8 | sp|P0ABE1|BCCP_SHIFL  |    2.4367 | 29.091%          | No                | --            |
+|      9 | sp|Q06881|BCCP_NOSS1  |    2.4689 | 30.357%          | Yes               | --            |
+|     10 | sp|Q68XI8|ODO2_RICTY  |    2.5459 | 27.536%          | Yes               | --            |
+|     11 | sp|A8AH10|RNFC_CITK8  |    2.6419 | 0.0%             | No                | --            |
+|     12 | sp|P39099|DEGQ_ECOLI  |    2.652  | 0.0%             | No                | --            |
+|     13 | sp|C6DH15|RNFC_PECCP  |    2.6606 | 0.0%             | No                | --            |
+|     14 | sp|P0ADA3|NLPD_ECOLI  |    2.694  | 0.0%             | No                | --            |
+|     15 | sp|P57003|TONB_NEIMA  |    2.7141 | 0.0%             | No                | --            |
+|     16 | sp|Q9Z4H7|HTRA_LACHE  |    2.7198 | 0.0%             | No                | --            |
+|     17 | sp|B4T0Q0|RODZ_SALNS  |    2.7252 | 0.0%             | No                | --            |
+|     18 | sp|O06432|TONB_NEIGO  |    2.7576 | 0.0%             | No                | --            |
+|     19 | sp|Q6G9D9|PTGA_STAAS  |    2.7599 | 0.0%             | No                | --            |
+|     20 | sp|A5TY84|PKNB_MYCTA  |    2.7633 | 0.0%             | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P10802|ODP2_AZOVI  |   11.6999 | 45.821%          | Yes               | --            |
+|      2 | sp|P11961|ODP2_GEOSE  |   16.2872 | 33.333%          | Yes               | --            |
+|      3 | sp|Q9SQI8|ODP24_ARATH |   16.7773 | 31.915%          | Yes               | --            |
+|      4 | sp|P49786|BCCP_BACSU  |   16.8403 | 0.0%             | No                | --            |
+|      5 | sp|P22439|ODPX_BOVIN  |   17.9977 | 26.263%          | Yes               | --            |
+|      6 | sp|P43874|BCCP_HAEIN  |   18.1663 | 39.583%          | Yes               | --            |
+|      7 | sp|P02904|BCCP_PROFR  |   19.6754 | 36.667%          | Yes               | --            |
+|      8 | sp|P29337|BCCP_STRMU  |   20.0152 | 34.483%          | Yes               | --            |
+|      9 | sp|P0ABE1|BCCP_SHIFL  |   20.3981 | 29.091%          | No                | --            |
+|     10 | sp|Q06881|BCCP_NOSS1  |   20.4547 | 30.357%          | Yes               | --            |
+|     11 | sp|B5XWP9|RNFC_KLEP3  |   20.7535 | 0.0%             | No                | --            |
+|     12 | sp|A9N025|RSXC_SALPB  |   21.0097 | 0.0%             | No                | --            |
+|     13 | sp|Q68XI8|ODO2_RICTY  |   21.0259 | 27.536%          | Yes               | --            |
+|     14 | sp|A8AH10|RNFC_CITK8  |   21.0261 | 0.0%             | No                | --            |
+|     15 | sp|C6DH15|RNFC_PECCP  |   21.1092 | 0.0%             | No                | --            |
+|     16 | sp|B1LEQ7|RSXC_ECOSM  |   21.4548 | 0.0%             | No                | --            |
+|     17 | sp|Q6MMS6|IF2_BDEBA   |   21.7466 | 0.0%             | No                | --            |
+|     18 | sp|P57003|TONB_NEIMA  |   21.7948 | 0.0%             | No                | --            |
+|     19 | sp|P39099|DEGQ_ECOLI  |   21.8361 | 0.0%             | No                | --            |
+|     20 | sp|P0ADA3|NLPD_ECOLI  |   22.2875 | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|P10802|ODP2_AZOVI  |    1.1866 | 45.821%          | Yes               | --            |
+|      2 | sp|P11961|ODP2_GEOSE  |    1.9795 | 33.333%          | Yes               | --            |
+|      3 | sp|Q9SQI8|ODP24_ARATH |    2.0037 | 31.915%          | Yes               | --            |
+|      4 | sp|P49786|BCCP_BACSU  |    2.0051 | 0.0%             | No                | --            |
+|      5 | sp|P22439|ODPX_BOVIN  |    2.1908 | 26.263%          | Yes               | --            |
+|      6 | sp|P43874|BCCP_HAEIN  |    2.2159 | 39.583%          | Yes               | --            |
+|      7 | sp|P29337|BCCP_STRMU  |    2.2805 | 34.483%          | Yes               | --            |
+|      8 | sp|P02904|BCCP_PROFR  |    2.3458 | 36.667%          | Yes               | --            |
+|      9 | sp|P0ABE1|BCCP_SHIFL  |    2.4367 | 29.091%          | No                | --            |
+|     10 | sp|Q06881|BCCP_NOSS1  |    2.4689 | 30.357%          | Yes               | --            |
+|     11 | sp|Q68XI8|ODO2_RICTY  |    2.5459 | 27.536%          | Yes               | --            |
+|     12 | sp|B5XWP9|RNFC_KLEP3  |    2.5546 | 0.0%             | No                | --            |
+|     13 | sp|A9N025|RSXC_SALPB  |    2.6245 | 0.0%             | No                | --            |
+|     14 | sp|A8AH10|RNFC_CITK8  |    2.6419 | 0.0%             | No                | --            |
+|     15 | sp|P39099|DEGQ_ECOLI  |    2.652  | 0.0%             | No                | --            |
+|     16 | sp|C6DH15|RNFC_PECCP  |    2.6606 | 0.0%             | No                | --            |
+|     17 | sp|P0ADA3|NLPD_ECOLI  |    2.694  | 0.0%             | No                | --            |
+|     18 | sp|P57003|TONB_NEIMA  |    2.7141 | 0.0%             | No                | --            |
+|     19 | sp|B0KV30|DEGPL_PSEPG |    2.7165 | 0.0%             | No                | --            |
+|     20 | sp|B4T0Q0|RODZ_SALNS  |    2.7252 | 0.0%             | No                | --            |
+
+============================================================================================================
+Query Protein: A0A010Q3W2
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0107 |  93.19 |                     0.125 |
+| IVF-Flat      |           0.0087 | 114.92 |                     0.125 |
+| Hypercube     |           0.0061 | 165.03 |                     0.125 |
+| IVF-PQ        |           0.0169 |  59.06 |                     0     |
+| Neural LSH    |           0.012  |  83.53 |                     0.125 |
+| BLAST (Ref)   |           0.354  |   2.82 |                     1     |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|D1ZEM6|LIS12_SORMK |    1.1467 | 37.5%            | No                | --            |
+|      2 | sp|Q2UUT4|CMR1_ASPOR  |    1.1775 | 0.0%             | No                | --            |
+|      3 | sp|A2QI22|YTM1_ASPNC  |    1.2317 | 25.424%          | No                | --            |
+|      4 | sp|P0CS56|CMR1_CRYNJ  |    1.2348 | 0.0%             | No                | --            |
+|      5 | sp|A1CXL0|YTM1_NEOFI  |    1.2404 | 33.333%          | No                | --            |
+|      6 | sp|P0CS29|ATG18_CRYNB |    1.2835 | 0.0%             | No                | --            |
+|      7 | sp|Q9S7I8|CDC22_ARATH |    1.2963 | 22.581%          | No                | --            |
+|      8 | sp|Q9NRL3|STRN4_HUMAN |    1.3072 | 22.699%          | No                | --            |
+|      9 | sp|Q9SU78|MSI5_ARATH  |    1.3099 | 27.907%          | No                | --            |
+|     10 | sp|Q756D0|YTM1_EREGS  |    1.3146 | 22.222%          | No                | --            |
+|     11 | sp|Q9P7C0|YKU5_SCHPO  |    1.3176 | 37.931%          | No                | --            |
+|     12 | sp|C1GB49|LIS1_PARBD  |    1.322  | 31.081%          | No                | --            |
+|     13 | sp|A2RAG5|ATG18_ASPNC |    1.3231 | 0.0%             | No                | --            |
+|     14 | sp|O35828|CORO7_RAT   |    1.3298 | 26.316%          | No                | --            |
+|     15 | sp|Q8VYZ5|PWP2_ARATH  |    1.3507 | 22.68%           | No                | --            |
+|     16 | sp|O82266|SWA1_ARATH  |    1.3568 | 26.742%          | Yes               | --            |
+|     17 | sp|Q652L2|HIRA_ORYSJ  |    1.3676 | 34.921%          | No                | --            |
+|     18 | sp|Q6C709|PRP46_YARLI |    1.3688 | 31.707%          | No                | --            |
+|     19 | sp|Q20059|WDR48_CAEEL |    1.3701 | 27.778%          | No                | --            |
+|     20 | sp|A8NZM5|JIP5_COPC7  |    1.3791 | 22.43%           | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|D1ZEM6|LIS12_SORMK |    1.3176 | 37.5%            | No                | --            |
+|      2 | sp|Q2UUT4|CMR1_ASPOR  |    1.3176 | 0.0%             | No                | --            |
+|      3 | sp|A2QI22|YTM1_ASPNC  |    1.3176 | 25.424%          | No                | --            |
+|      4 | sp|P0CS56|CMR1_CRYNJ  |    1.3176 | 0.0%             | No                | --            |
+|      5 | sp|A1CXL0|YTM1_NEOFI  |    1.3176 | 33.333%          | No                | --            |
+|      6 | sp|P0CS29|ATG18_CRYNB |    1.3176 | 0.0%             | No                | --            |
+|      7 | sp|Q9S7I8|CDC22_ARATH |    1.3176 | 22.581%          | No                | --            |
+|      8 | sp|Q9NRL3|STRN4_HUMAN |    1.3176 | 22.699%          | No                | --            |
+|      9 | sp|Q9SU78|MSI5_ARATH  |    1.3176 | 27.907%          | No                | --            |
+|     10 | sp|Q756D0|YTM1_EREGS  |    1.3176 | 22.222%          | No                | --            |
+|     11 | sp|Q9P7C0|YKU5_SCHPO  |    1.3176 | 37.931%          | No                | --            |
+|     12 | sp|C1GB49|LIS1_PARBD  |    1.3176 | 31.081%          | No                | --            |
+|     13 | sp|A2RAG5|ATG18_ASPNC |    1.3176 | 0.0%             | No                | --            |
+|     14 | sp|O35828|CORO7_RAT   |    1.3176 | 26.316%          | No                | --            |
+|     15 | sp|Q8VYZ5|PWP2_ARATH  |    1.3176 | 22.68%           | No                | --            |
+|     16 | sp|O82266|SWA1_ARATH  |    1.3176 | 26.742%          | Yes               | --            |
+|     17 | sp|Q652L2|HIRA_ORYSJ  |    1.3176 | 34.921%          | No                | --            |
+|     18 | sp|Q6C709|PRP46_YARLI |    1.3176 | 31.707%          | No                | --            |
+|     19 | sp|Q20059|WDR48_CAEEL |    1.3176 | 27.778%          | No                | --            |
+|     20 | sp|A8NZM5|JIP5_COPC7  |    1.3176 | 22.43%           | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|D1ZEM6|LIS12_SORMK |    1.1467 | 37.5%            | No                | --            |
+|      2 | sp|Q2UUT4|CMR1_ASPOR  |    1.1775 | 0.0%             | No                | --            |
+|      3 | sp|A2QI22|YTM1_ASPNC  |    1.2317 | 25.424%          | No                | --            |
+|      4 | sp|P0CS56|CMR1_CRYNJ  |    1.2348 | 0.0%             | No                | --            |
+|      5 | sp|A1CXL0|YTM1_NEOFI  |    1.2404 | 33.333%          | No                | --            |
+|      6 | sp|P0CS29|ATG18_CRYNB |    1.2835 | 0.0%             | No                | --            |
+|      7 | sp|Q9S7I8|CDC22_ARATH |    1.2963 | 22.581%          | No                | --            |
+|      8 | sp|Q9NRL3|STRN4_HUMAN |    1.3072 | 22.699%          | No                | --            |
+|      9 | sp|Q9SU78|MSI5_ARATH  |    1.3099 | 27.907%          | No                | --            |
+|     10 | sp|Q756D0|YTM1_EREGS  |    1.3146 | 22.222%          | No                | --            |
+|     11 | sp|Q9P7C0|YKU5_SCHPO  |    1.3176 | 37.931%          | No                | --            |
+|     12 | sp|C1GB49|LIS1_PARBD  |    1.322  | 31.081%          | No                | --            |
+|     13 | sp|A2RAG5|ATG18_ASPNC |    1.3231 | 0.0%             | No                | --            |
+|     14 | sp|O35828|CORO7_RAT   |    1.3298 | 26.316%          | No                | --            |
+|     15 | sp|Q8VYZ5|PWP2_ARATH  |    1.3507 | 22.68%           | No                | --            |
+|     16 | sp|O82266|SWA1_ARATH  |    1.3568 | 26.742%          | Yes               | --            |
+|     17 | sp|Q652L2|HIRA_ORYSJ  |    1.3676 | 34.921%          | No                | --            |
+|     18 | sp|Q6C709|PRP46_YARLI |    1.3688 | 31.707%          | No                | --            |
+|     19 | sp|Q20059|WDR48_CAEEL |    1.3701 | 27.778%          | No                | --            |
+|     20 | sp|A8NZM5|JIP5_COPC7  |    1.3791 | 22.43%           | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|D1ZEM6|LIS12_SORMK |    9.5627 | 37.5%            | No                | --            |
+|      2 | sp|Q2UUT4|CMR1_ASPOR  |   10.3577 | 0.0%             | No                | --            |
+|      3 | sp|C1GB49|LIS1_PARBD  |   10.5203 | 31.081%          | No                | --            |
+|      4 | sp|A2QI22|YTM1_ASPNC  |   10.7284 | 25.424%          | No                | --            |
+|      5 | sp|A1CXL0|YTM1_NEOFI  |   10.9667 | 33.333%          | No                | --            |
+|      6 | sp|Q9S7I8|CDC22_ARATH |   11.1352 | 22.581%          | No                | --            |
+|      7 | sp|P0CS56|CMR1_CRYNJ  |   11.2495 | 0.0%             | No                | --            |
+|      8 | sp|Q9NRL3|STRN4_HUMAN |   11.3274 | 22.699%          | No                | --            |
+|      9 | sp|Q756D0|YTM1_EREGS  |   11.39   | 22.222%          | No                | --            |
+|     10 | sp|P0CS29|ATG18_CRYNB |   11.4115 | 0.0%             | No                | --            |
+|     11 | sp|O22785|PR19B_ARATH |   11.4408 | 22.321%          | No                | --            |
+|     12 | sp|Q9SU78|MSI5_ARATH  |   11.5633 | 27.907%          | No                | --            |
+|     13 | sp|Q6C709|PRP46_YARLI |   11.5856 | 31.707%          | No                | --            |
+|     14 | sp|Q9P7C0|YKU5_SCHPO  |   11.5918 | 37.931%          | No                | --            |
+|     15 | sp|Q8VYZ5|PWP2_ARATH  |   11.6434 | 22.68%           | No                | --            |
+|     16 | sp|Q20059|WDR48_CAEEL |   11.7354 | 27.778%          | No                | --            |
+|     17 | sp|C5DF48|LIS1_LACTC  |   11.7867 | 27.419%          | No                | --            |
+|     18 | sp|Q9LJN8|BUB31_ARATH |   11.8058 | 24.306%          | No                | --            |
+|     19 | sp|O35828|CORO7_RAT   |   11.827  | 26.316%          | No                | --            |
+|     20 | sp|A2RAG5|ATG18_ASPNC |   11.836  | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|D1ZEM6|LIS12_SORMK |    1.1467 | 37.5%            | No                | --            |
+|      2 | sp|Q2UUT4|CMR1_ASPOR  |    1.1775 | 0.0%             | No                | --            |
+|      3 | sp|A2QI22|YTM1_ASPNC  |    1.2317 | 25.424%          | No                | --            |
+|      4 | sp|P0CS56|CMR1_CRYNJ  |    1.2348 | 0.0%             | No                | --            |
+|      5 | sp|A1CXL0|YTM1_NEOFI  |    1.2404 | 33.333%          | No                | --            |
+|      6 | sp|P0CS29|ATG18_CRYNB |    1.2835 | 0.0%             | No                | --            |
+|      7 | sp|Q9S7I8|CDC22_ARATH |    1.2963 | 22.581%          | No                | --            |
+|      8 | sp|Q9NRL3|STRN4_HUMAN |    1.3072 | 22.699%          | No                | --            |
+|      9 | sp|Q9SU78|MSI5_ARATH  |    1.3099 | 27.907%          | No                | --            |
+|     10 | sp|Q756D0|YTM1_EREGS  |    1.3146 | 22.222%          | No                | --            |
+|     11 | sp|Q9P7C0|YKU5_SCHPO  |    1.3176 | 37.931%          | No                | --            |
+|     12 | sp|C1GB49|LIS1_PARBD  |    1.322  | 31.081%          | No                | --            |
+|     13 | sp|A2RAG5|ATG18_ASPNC |    1.3231 | 0.0%             | No                | --            |
+|     14 | sp|O35828|CORO7_RAT   |    1.3298 | 26.316%          | No                | --            |
+|     15 | sp|Q8VYZ5|PWP2_ARATH  |    1.3507 | 22.68%           | No                | --            |
+|     16 | sp|O82266|SWA1_ARATH  |    1.3568 | 26.742%          | Yes               | --            |
+|     17 | sp|Q652L2|HIRA_ORYSJ  |    1.3676 | 34.921%          | No                | --            |
+|     18 | sp|Q6C709|PRP46_YARLI |    1.3688 | 31.707%          | No                | --            |
+|     19 | sp|Q20059|WDR48_CAEEL |    1.3702 | 27.778%          | No                | --            |
+|     20 | sp|A8NZM5|JIP5_COPC7  |    1.3791 | 22.43%           | No                | --            |
+
+============================================================================================================
+Query Protein: A0A010Q8R4
+N = 20
+| Method        |   Time/query (s) |    QPS |   Recall@N vs BLAST Top-N |
+|---------------|------------------|--------|---------------------------|
+| Euclidean LSH |           0.0116 |  86.48 |                         0 |
+| IVF-Flat      |           0.0096 | 104.42 |                         0 |
+| Hypercube     |           0.0037 | 268.1  |                         0 |
+| IVF-PQ        |           0.0128 |  78.1  |                         0 |
+| Neural LSH    |           0.0103 |  96.68 |                         0 |
+| BLAST (Ref)   |           0.354  |   2.82 |                         1 |
+
+Method: Euclidean LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q9P4R5|CREC_EMENI  |    1.2193 | 0.0%             | No                | --            |
+|      2 | sp|Q652L2|HIRA_ORYSJ  |    1.2241 | 0.0%             | No                | --            |
+|      3 | sp|P0CS56|CMR1_CRYNJ  |    1.2427 | 0.0%             | No                | --            |
+|      4 | sp|P0CS29|ATG18_CRYNB |    1.266  | 0.0%             | No                | --            |
+|      5 | sp|Q5NVM2|DC1I2_PONAB |    1.3292 | 0.0%             | No                | --            |
+|      6 | sp|Q2UUT4|CMR1_ASPOR  |    1.3398 | 0.0%             | No                | --            |
+|      7 | sp|Q6CXX3|HIR1_KLULA  |    1.348  | 26.087%          | No                | --            |
+|      8 | sp|A1CBB8|ATG18_ASPCL |    1.3712 | 0.0%             | No                | --            |
+|      9 | sp|Q9P7C0|YKU5_SCHPO  |    1.3772 | 0.0%             | No                | --            |
+|     10 | sp|Q24246|DYIN_DROME  |    1.384  | 0.0%             | No                | --            |
+|     11 | sp|A2RAG5|ATG18_ASPNC |    1.3864 | 0.0%             | No                | --            |
+|     12 | sp|Q9SU78|MSI5_ARATH  |    1.3934 | 26.389%          | No                | --            |
+|     13 | sp|A1DE24|ATG18_NEOFI |    1.4302 | 0.0%             | No                | --            |
+|     14 | sp|Q9VKK2|WDR59_DROME |    1.4311 | 0.0%             | No                | --            |
+|     15 | sp|Q8BX09|RBBP5_MOUSE |    1.4378 | 21.429%          | No                | --            |
+|     16 | sp|Q5ZMV9|WDR24_CHICK |    1.4606 | 33.333%          | No                | --            |
+|     17 | sp|Q4PA27|JIP5_MYCMD  |    1.4625 | 0.0%             | No                | --            |
+|     18 | sp|Q20059|WDR48_CAEEL |    1.4712 | 0.0%             | No                | --            |
+|     19 | sp|A1DIN7|ATP25_NEOFI |    1.488  | 0.0%             | No                | --            |
+|     20 | sp|Q9ERG2|STRN3_MOUSE |    1.4885 | 0.0%             | No                | --            |
+
+Method: IVF-Flat
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q9P4R5|CREC_EMENI  |    1.3934 | 0.0%             | No                | --            |
+|      2 | sp|Q652L2|HIRA_ORYSJ  |    1.3934 | 0.0%             | No                | --            |
+|      3 | sp|P0CS56|CMR1_CRYNJ  |    1.3934 | 0.0%             | No                | --            |
+|      4 | sp|P0CS29|ATG18_CRYNB |    1.3934 | 0.0%             | No                | --            |
+|      5 | sp|Q5NVM2|DC1I2_PONAB |    1.3934 | 0.0%             | No                | --            |
+|      6 | sp|Q2UUT4|CMR1_ASPOR  |    1.3934 | 0.0%             | No                | --            |
+|      7 | sp|Q6CXX3|HIR1_KLULA  |    1.3934 | 26.087%          | No                | --            |
+|      8 | sp|A1CBB8|ATG18_ASPCL |    1.3934 | 0.0%             | No                | --            |
+|      9 | sp|Q9P7C0|YKU5_SCHPO  |    1.3934 | 0.0%             | No                | --            |
+|     10 | sp|Q24246|DYIN_DROME  |    1.3934 | 0.0%             | No                | --            |
+|     11 | sp|A2RAG5|ATG18_ASPNC |    1.3934 | 0.0%             | No                | --            |
+|     12 | sp|Q9SU78|MSI5_ARATH  |    1.3934 | 26.389%          | No                | --            |
+|     13 | sp|A1DE24|ATG18_NEOFI |    1.3934 | 0.0%             | No                | --            |
+|     14 | sp|Q9VKK2|WDR59_DROME |    1.3934 | 0.0%             | No                | --            |
+|     15 | sp|Q8BX09|RBBP5_MOUSE |    1.3934 | 21.429%          | No                | --            |
+|     16 | sp|Q5ZMV9|WDR24_CHICK |    1.3934 | 33.333%          | No                | --            |
+|     17 | sp|Q4PA27|JIP5_MYCMD  |    1.3934 | 0.0%             | No                | --            |
+|     18 | sp|Q20059|WDR48_CAEEL |    1.3934 | 0.0%             | No                | --            |
+|     19 | sp|A1DIN7|ATP25_NEOFI |    1.3934 | 0.0%             | No                | --            |
+|     20 | sp|Q9ERG2|STRN3_MOUSE |    1.3934 | 0.0%             | No                | --            |
+
+Method: Hypercube
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q9P4R5|CREC_EMENI  |    1.2193 | 0.0%             | No                | --            |
+|      2 | sp|Q652L2|HIRA_ORYSJ  |    1.2241 | 0.0%             | No                | --            |
+|      3 | sp|P0CS56|CMR1_CRYNJ  |    1.2427 | 0.0%             | No                | --            |
+|      4 | sp|P0CS29|ATG18_CRYNB |    1.266  | 0.0%             | No                | --            |
+|      5 | sp|Q5NVM2|DC1I2_PONAB |    1.3292 | 0.0%             | No                | --            |
+|      6 | sp|Q2UUT4|CMR1_ASPOR  |    1.3398 | 0.0%             | No                | --            |
+|      7 | sp|Q6CXX3|HIR1_KLULA  |    1.348  | 26.087%          | No                | --            |
+|      8 | sp|A1CBB8|ATG18_ASPCL |    1.3712 | 0.0%             | No                | --            |
+|      9 | sp|Q9P7C0|YKU5_SCHPO  |    1.3772 | 0.0%             | No                | --            |
+|     10 | sp|Q24246|DYIN_DROME  |    1.384  | 0.0%             | No                | --            |
+|     11 | sp|A2RAG5|ATG18_ASPNC |    1.3864 | 0.0%             | No                | --            |
+|     12 | sp|Q9SU78|MSI5_ARATH  |    1.3934 | 26.389%          | No                | --            |
+|     13 | sp|A1DE24|ATG18_NEOFI |    1.4302 | 0.0%             | No                | --            |
+|     14 | sp|Q9VKK2|WDR59_DROME |    1.4311 | 0.0%             | No                | --            |
+|     15 | sp|Q8BX09|RBBP5_MOUSE |    1.4378 | 21.429%          | No                | --            |
+|     16 | sp|Q5ZMV9|WDR24_CHICK |    1.4606 | 33.333%          | No                | --            |
+|     17 | sp|Q4PA27|JIP5_MYCMD  |    1.4625 | 0.0%             | No                | --            |
+|     18 | sp|Q20059|WDR48_CAEEL |    1.4712 | 0.0%             | No                | --            |
+|     19 | sp|A1DIN7|ATP25_NEOFI |    1.488  | 0.0%             | No                | --            |
+|     20 | sp|B2AY28|ERB1_PODAN  |    1.4956 | 0.0%             | No                | --            |
+
+Method: IVF-PQ
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q652L2|HIRA_ORYSJ  |   10.504  | 0.0%             | No                | --            |
+|      2 | sp|Q9P4R5|CREC_EMENI  |   11.071  | 0.0%             | No                | --            |
+|      3 | sp|P0CS56|CMR1_CRYNJ  |   11.1072 | 0.0%             | No                | --            |
+|      4 | sp|P0CS29|ATG18_CRYNB |   11.2699 | 0.0%             | No                | --            |
+|      5 | sp|Q2UUT4|CMR1_ASPOR  |   11.5574 | 0.0%             | No                | --            |
+|      6 | sp|Q5NVM2|DC1I2_PONAB |   11.746  | 0.0%             | No                | --            |
+|      7 | sp|Q6CXX3|HIR1_KLULA  |   11.7461 | 26.087%          | No                | --            |
+|      8 | sp|Q9P7C0|YKU5_SCHPO  |   11.8344 | 0.0%             | No                | --            |
+|      9 | sp|A1DIN7|ATP25_NEOFI |   11.9425 | 0.0%             | No                | --            |
+|     10 | sp|A2QI22|YTM1_ASPNC  |   12.0421 | 0.0%             | No                | --            |
+|     11 | sp|A2RAG5|ATG18_ASPNC |   12.0538 | 0.0%             | No                | --            |
+|     12 | sp|Q9SU78|MSI5_ARATH  |   12.1469 | 26.389%          | No                | --            |
+|     13 | sp|Q24246|DYIN_DROME  |   12.2006 | 0.0%             | No                | --            |
+|     14 | sp|A1CBB8|ATG18_ASPCL |   12.2838 | 0.0%             | No                | --            |
+|     15 | sp|A1CXL0|YTM1_NEOFI  |   12.3308 | 0.0%             | No                | --            |
+|     16 | sp|Q8BX09|RBBP5_MOUSE |   12.4206 | 21.429%          | No                | --            |
+|     17 | sp|Q5ZMV9|WDR24_CHICK |   12.4595 | 33.333%          | No                | --            |
+|     18 | sp|A2QGF0|NAGS_ASPNC  |   12.5302 | 0.0%             | No                | --            |
+|     19 | sp|Q4PA27|JIP5_MYCMD  |   12.5673 | 0.0%             | No                | --            |
+|     20 | sp|A1DE24|ATG18_NEOFI |   12.5696 | 0.0%             | No                | --            |
+
+Method: Neural LSH
+|   Rank | Neighbor ID           |   L2 Dist | BLAST Identity   | In BLAST Top-N?   | Bio comment   |
+|--------|-----------------------|-----------|------------------|-------------------|---------------|
+|      1 | sp|Q9P4R5|CREC_EMENI  |    1.2193 | 0.0%             | No                | --            |
+|      2 | sp|Q652L2|HIRA_ORYSJ  |    1.2241 | 0.0%             | No                | --            |
+|      3 | sp|P0CS56|CMR1_CRYNJ  |    1.2427 | 0.0%             | No                | --            |
+|      4 | sp|P0CS29|ATG18_CRYNB |    1.266  | 0.0%             | No                | --            |
+|      5 | sp|Q5NVM2|DC1I2_PONAB |    1.3291 | 0.0%             | No                | --            |
+|      6 | sp|Q2UUT4|CMR1_ASPOR  |    1.3399 | 0.0%             | No                | --            |
+|      7 | sp|Q6CXX3|HIR1_KLULA  |    1.348  | 26.087%          | No                | --            |
+|      8 | sp|A1CBB8|ATG18_ASPCL |    1.3712 | 0.0%             | No                | --            |
+|      9 | sp|Q9P7C0|YKU5_SCHPO  |    1.3772 | 0.0%             | No                | --            |
+|     10 | sp|Q24246|DYIN_DROME  |    1.384  | 0.0%             | No                | --            |
+|     11 | sp|A2RAG5|ATG18_ASPNC |    1.3864 | 0.0%             | No                | --            |
+|     12 | sp|Q9SU78|MSI5_ARATH  |    1.3934 | 26.389%          | No                | --            |
+|     13 | sp|A1DE24|ATG18_NEOFI |    1.4302 | 0.0%             | No                | --            |
+|     14 | sp|Q9VKK2|WDR59_DROME |    1.4311 | 0.0%             | No                | --            |
+|     15 | sp|Q8BX09|RBBP5_MOUSE |    1.4378 | 21.429%          | No                | --            |
+|     16 | sp|Q5ZMV9|WDR24_CHICK |    1.4606 | 33.333%          | No                | --            |
+|     17 | sp|Q4PA27|JIP5_MYCMD  |    1.4625 | 0.0%             | No                | --            |
+|     18 | sp|Q20059|WDR48_CAEEL |    1.4712 | 0.0%             | No                | --            |
+|     19 | sp|A1DIN7|ATP25_NEOFI |    1.488  | 0.0%             | No                | --            |
+|     20 | sp|Q9ERG2|STRN3_MOUSE |    1.4885 | 0.0%             | No                | --            |
